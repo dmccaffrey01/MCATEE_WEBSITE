@@ -10,14 +10,17 @@
 :root {
     --MAIN-BG: #262626;
     --MAIN-TP: #262626e3;
-    --DARK-BG: #262626;
+    --LIGHT-GRAY-1: #b0b0b0;
+    --LIGHT-GRAY-2: #f2f2f2;
+    --GOLD: #be9f37;
+    --DARK-TEXT: #262626;
     --LIGHT-BG: #333333;
     --WHITE-TEXT: #ffffff;
     --NAV: #262626e3;
 }
 
 body {
-    background-color: var(--LIGHT-BG);
+    background-color: var(--LIGHT-GRAY-2);
     min-height: 100vh;
     position: relative;
     font-family: "Lato", sans-serif;
@@ -43,6 +46,7 @@ header {
     position: absolute;
     top: 0;
     font-family: "Source-Sans-Pro", sans-serif;
+    z-index: 2;
 }
 
 .header-container {
@@ -214,4 +218,117 @@ header {
     .socials-container {
         width: 120px;
     }
+}
+
+/* Hero Image Section */
+
+.hero-image-container {
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    position: relative;
+}
+
+.hero-image-container img {
+    height: 100%;
+    width: auto;
+    max-width: none;
+}
+
+.hero-content-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: var(--MAIN-TP);
+    border-radius: 5px;
+}
+
+.hero-slogan {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.slogan-line {
+    color: var(--GOLD);
+    font-size: 1.8rem;
+    text-align: center;
+    width: 400px;
+}
+
+.slogan-line.heading {
+    font-size: 2rem;
+    color: var(--WHITE-TEXT);
+}
+
+.hero-btns-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 20px;
+}
+
+.btn {
+    background-color: var(--GOLD);
+    padding: 10px;
+    color: var(--WHITE-TEXT);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Intro Section */
+
+.intro-section {
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-container {
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.intro-img-container {
+    width: 400px;
+    height: 400px;
+}
+
+.intro-img-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.intro-content-container {
+    width: 550px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.intro-text {
+    color: var(--DARK-TEXT);
+    font-size: 0.9rem;
+}
+
+.intro-text.heading {
+    font-size: 1.3rem;
 }
