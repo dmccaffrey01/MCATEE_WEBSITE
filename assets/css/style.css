@@ -534,27 +534,25 @@ header {
 
 .dots-container {
     width: 250px;
-    height: 90px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 30px;
-    border-radius: 5px;
-    background-color: var(--MAIN-BG);
-    padding: 20px;
 }
 
 .dot {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
-    background-color: var(--LIGHT-BG);
+    border: 2px solid var(--MAIN-BG);
+    background-color: var(--LIGHT-GRAY-2);
     cursor: pointer;
     transition: all 0.2s ease;
 }
 
 .dot.active {
-    background-color: var(--LIGHT-GRAY-2);
+    background-color: var(--MAIN-BG);
 }
 
 /* Footer */
@@ -587,4 +585,11 @@ footer {
 
 .privacy-link {
     color: var(--WHITE-TEXT);
+}
+
+.footer-nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
 }
