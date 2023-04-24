@@ -36,12 +36,16 @@ a:visited {
     color: var(--WHITE-TEXT);
 }
 
+a {
+    text-decoration: none;
+}
+
 /* Header */
 
 header {
     width: 100vw;
     overflow: hidden;
-    background-color: var(--MAIN-TP);
+    background-color: var(--MAIN-BG);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -151,15 +155,6 @@ header {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-}
-
-.cv-text {
-    color: var(--WHITE-TEXT);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    font-size: 1rem;
 }
 
 .social-link {
@@ -560,4 +555,36 @@ header {
 
 .dot.active {
     background-color: var(--LIGHT-GRAY-2);
+}
+
+/* Footer */
+
+footer {
+    width: 100vw;
+    overflow: hidden;
+    background-color: var(--MAIN-BG);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -100px;
+    font-family: "Source-Sans-Pro", sans-serif;
+}
+
+.footer-container {
+    height: 100px;
+    width: calc(100vw - 80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    color: var(--WHITE-TEXT);
+}
+
+.copyright {
+    width: 150px;
+}
+
+.privacy-link {
+    color: var(--WHITE-TEXT);
 }
