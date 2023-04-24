@@ -1121,3 +1121,21 @@ footer {
         height: 270px;
     }
 }
+
+
+/* 404 Section */
+
+.error-404-section {
+    height: 100vh;
+    width: 100vw;
+}
+
+.content-404 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
