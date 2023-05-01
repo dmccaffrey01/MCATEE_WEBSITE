@@ -1081,7 +1081,8 @@ footer {
 /* Contact Section */
 
 .contact-section {
-    height: 1000px;
+    height: fit-content;
+    padding: 180px 0 100px 0;
     width: 100vw;
     max-width: 100%;
     display: flex;
@@ -1252,6 +1253,37 @@ footer {
         width: 270px;
         height: 270px;
     }
+}
+
+/* Notification */
+
+.notification {
+    position: absolute;
+    display: none;
+    top: 110px;
+    z-index: 4;
+    width: 100vw;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.notification.active {
+    display: flex;
+}
+
+.notification-container {
+    width: 300px;
+    height: fit-content;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: var(--MAIN-TP);
+    border: 2px solid white;
+}
+
+.notification-message {
+    color: var(--WHITE-TEXT);
+    font-size: 1.2rem;
 }
 
 
