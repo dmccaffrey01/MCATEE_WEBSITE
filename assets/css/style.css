@@ -154,15 +154,30 @@ header {
     background-color: var(--MAIN-TP);
 }
 
-.nav-item:hover .nav-dropdown-container {
+.nav-dropdown-btn:hover .nav-dropdown-container {
     visibility: visible;
     opacity: 1;
     transform: translateY(0);
 }
 
+.nav-dropdown-icon {
+    color: var(--WHITE-TEXT);
+    font-size: 0.8rem;
+    display: inline-flex;
+    align-items: center;
+    margin-left: 5px;
+    transition: all 0.2s ease;
+}
+
+.nav-dropdown-btn:hover .nav-dropdown-icon {
+    transform: rotate(-180deg);
+}
+  
 .nav-link {
     text-decoration: none;
     color: var(--WHITE-TEXT);
+    display: flex;
+    align-items: center;
 }
 
 .hamburger {
@@ -242,6 +257,7 @@ header {
         justify-content: flex-start;
         background-color: var(--NAV);
         width: 100vw;
+        max-width: 100%;
         height: fit-content;
         text-align: center;
         transition: 0.3s;
@@ -260,6 +276,28 @@ header {
 
     .nav-item {
         height: fit-content;
+    }
+
+    .nav-dropdown-container {
+        height: 0;
+        overflow: hidden;
+        transition: height 0.5s ease;
+        position: absolute;
+        display: none;
+    }
+
+    .nav-dropdown-container.active {
+        display: flex;
+    }
+
+    .nav-dropdown {
+        width: 100%;
+        border-radius: 0;
+        height: fit-content;
+    }
+
+    .nav-dropdown-btn:hover .nav-dropdown-icon {
+        transform: rotate(0);
     }
 
     /* Socials */
@@ -343,6 +381,7 @@ header {
     border-radius: 5px;
     cursor: pointer;
     font-size: 1.7rem;
+    text-align: center;
 }
 
 @media (max-width: 1000px) {
@@ -863,6 +902,7 @@ footer {
 .about-us-section {
     height: 1000px;
     width: 100vw;
+    max-width: 100%;
     background-color: var(--MAIN-BG);
     display: flex;
     justify-content: center;
@@ -1043,6 +1083,7 @@ footer {
 .contact-section {
     height: 1000px;
     width: 100vw;
+    max-width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1219,6 +1260,7 @@ footer {
 .error-404-section {
     height: 100vh;
     width: 100vw;
+    max-width: 100%;
     background-color: var(--LIGHT-GRAY-2);
 }
 
