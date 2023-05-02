@@ -1,6 +1,5 @@
 const copyLinks = document.querySelectorAll('.copy-link');
-const message = document.querySelector('.notification-message');
-const notification = document.querySelector(".notification");
+
 
 copyLinks.forEach(function (copyLink) {
     copyLink.addEventListener('click', function (event) {
@@ -9,18 +8,36 @@ copyLinks.forEach(function (copyLink) {
 
         navigator.clipboard.writeText(copyText)
             .then(() => {
-                message.textContent = `"${copyText}" - was copied to the clipboard`;
-                notification.classList.add("active");
-                window.setTimeout(() => {
-                    notification.classList.remove("active");
-                }, 3000);
+                let message = `"${copyText}" - was copied to the clipboard`;
+                displayNotification(message, "CLOSE", 3000);
             })
             .catch(() => {
-                message.textContent = 'Failed to copy text to clipboard';
-                notification.classList.add("active");
-                window.setTimeout(() => {
-                    notification.classList.remove("active");
-                }, 3000);
+                let message = 'Failed to copy text to clipboard';
+                displayNotification(message, "CLOSE", 3000);
             });
     });
 });
+
+/**
+ * Display notification message
+ */
+function displayNotification(message, btn1, time) {
+	// Define vars
+	let notification = document.querySelector(".notification");
+	let notificationMessage = document.querySelector(".notification-message");
+	let notificationBtn = document.querySelector(".notification-btn");
+
+	notificationMessage.innerText = message;
+
+	notificationBtn.innerText = btn1;
+
+	notification.classList.add("active");
+
+	notificationBtn.addEventListener("click", () => {
+		notification.classList.remove("active");
+	});
+
+    window.setTimeout(() => {
+        notification.classList.remove("active");
+    }, time);
+}

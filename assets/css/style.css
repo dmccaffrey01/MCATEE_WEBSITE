@@ -10,6 +10,7 @@
 :root {
     --MAIN-BG: #262626;
     --MAIN-TP: #262626e3;
+    --MAIN-MORE-TP: #262626a9;
     --LIGHT-GRAY-1: #b0b0b0;
     --LIGHT-GRAY-2: #f2f2f2;
     --GOLD: #b17c28;
@@ -382,6 +383,7 @@ header {
     cursor: pointer;
     font-size: 1.7rem;
     text-align: center;
+    width: fit-content;
 }
 
 @media (max-width: 1000px) {
@@ -900,7 +902,8 @@ footer {
 /* About Us Section */
 
 .about-us-section {
-    height: 1000px;
+    height: fit-content;
+    padding: 300px 0 200px 0;
     width: 100vw;
     max-width: 100%;
     background-color: var(--MAIN-BG);
@@ -938,6 +941,7 @@ footer {
     flex-direction: column;
     gap: 20px;
     color: var(--WHITE-TEXT);
+    font-size: 1.2rem;
 }
 
 @media (max-width: 1000px) {
@@ -1278,14 +1282,114 @@ footer {
     padding: 20px;
     border-radius: 5px;
     background-color: var(--MAIN-TP);
-    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .notification-message {
     color: var(--WHITE-TEXT);
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
+.notification-btn {
+    font-size: 1.3rem;
+    margin: 10px 0 0 0;
+}
+
+/* Buy Page */
+
+/* Buy Hero */
+
+.buy-hero-content-container {
+    background-color: var(--MAIN-MORE-TP);
+    width: 800px;
+    padding: 30px 30px 10px 30px;
+}
+
+.hero-text {
+    color: var(--WHITE-TEXT);
+    font-size: 1.8rem;
+}
+
+/* Morals Section */
+
+.morals-section {
+    padding: 150px 0;
+    width: 100vw;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--MAIN-BG);
+}
+
+.morals-container {
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.morals-heading {
+    font-size: 4rem;
+    color: var(--WHITE-TEXT);
+}
+
+.morals-sub-heading {
+    font-size: 2rem;
+    color: var(--GOLD);
+}
+
+.morals-content-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 80px;
+}
+
+.morals-info-container {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.morals-icon-container {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: var(--GOLD);
+}
+
+.morals-icon {
+    width: 100%;
+    height: auto;
+}
+
+.morals-info-heading {
+    font-size: 2.5rem;
+    color: var(--GOLD);
+}
+
+.morals-info-text {
+    font-size: 1.5rem;
+    color: var(--WHITE-TEXT);
+    text-align: center;
+}
+
+.morals-outro-text {
+    font-size: 2rem;
+    color: var(--GOLD);
+    text-align: center;
+}
 
 /* 404 Section */
 
