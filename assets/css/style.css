@@ -349,11 +349,11 @@ header {
 }
 
 .slogan-line {
-    color: var(--GOLD);
-    font-size: 1.9rem;
+    color: var(--WHITE-TEXT);
+    font-size: 2rem;
     text-align: center;
-    width: 400px;
     padding: 5px 0;
+    width: 400px;
 }
 
 .slogan-line.heading {
@@ -362,8 +362,8 @@ header {
 }
 
 .slogan-line.sub-heading {
-    font-size: 1.7rem;
-    color: var(--WHITE-TEXT);
+    font-size: 1.8rem;
+    color: var(--GOLD);
 }
 
 .hero-btns-container {
@@ -405,7 +405,8 @@ header {
 /* Intro Section */
 
 .intro-section {
-    height: 500px;
+    height: fit-content;
+    padding: 100px 0;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -487,7 +488,8 @@ header {
 /* Choose Section */
 
 .choose-section {
-    height: 500px;
+    height: fit-content;
+    padding: 100px 0;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -1308,9 +1310,8 @@ footer {
     padding: 30px 30px 10px 30px;
 }
 
-.hero-text {
-    color: var(--WHITE-TEXT);
-    font-size: 1.8rem;
+.hero-slogan .buy {
+    width: 100%;
 }
 
 /* Morals Section */
@@ -1387,9 +1388,30 @@ footer {
 
 .morals-outro-text {
     font-size: 2rem;
-    color: var(--GOLD);
+    color: var(--WHITE-TEXT);
     text-align: center;
 }
+
+/* Roadmap Section */
+
+.roadmap-section {
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.roadmap-img-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
 
 /* 404 Section */
 
