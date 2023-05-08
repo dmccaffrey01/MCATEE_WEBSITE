@@ -1261,6 +1261,46 @@ footer {
     font-size: 1.3rem;
 }
 
+.social-media-links-section {
+    background-color: var(--LIGHT-GRAY-2);
+    width: 100vw;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    padding: 50px 0;
+}
+
+.social-media-links-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.social-icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: var(--GOLD);
+    width: 130px;
+    height: 130px;
+    border: 10px solid var(--MAIN-BG)
+}
+
+.social-icon-container i {
+    font-size: 4rem;
+    color: var(--WHITE-TEXT);
+}
+
+.social-media-links-heading {
+    font-size: 4rem;
+    color: var(--MAIN-BG);
+}
+
 @media (max-width: 1100px) {
     
     .contact-section {
