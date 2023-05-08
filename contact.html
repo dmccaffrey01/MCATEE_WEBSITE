@@ -77,7 +77,65 @@
         </div>
     </div>
 
-    <div class="contact-section">
+    <section class="contact-heading-section">
+        <div class="contact-heading">Contact Us</div>
+    </section>
+
+    <section class="contact-form-section contact-dark-seciton">
+        <div class="contact-form-container">
+            <form class="contact-form">
+                <div class="input-container input-container-1">
+                    <div class="label-container">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-input contact-name-input" name="name" id="name">
+                    </div>
+                    <div class="label-container">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="text" class="form-input contact-email-input" name="email" id="email">
+                    </div>
+                </div>
+                <div class="input-container input-container-2">
+                    <div class="label-container">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea name="message" id="message" rows="5" class="form-input contact-message-input">Drop a message to the McAtee Group...</textarea>
+                    </div>
+                </div>
+                <div class="input-container-3">
+                    <input type="submit" class="send-email-btn" value="Send">
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section class="maps-info-section contact-dark-section">
+        <div class="contact-details-container">
+            <div class="contact-details">
+                <div class="contact-details-text-container">
+                    <div class="contact-details-text">Email: <a href="#" class="copy-link" data-copy-text="INFO@mcateegroup.com">info@mcateegroup.com</a></div>
+                    <div class="contact-details-text">
+                        Address:
+                        <a href="#" class="copy-link" data-copy-text="McAtee Group of Taylor Properties,
+                        175 Admiral Cochrane Drive, #112, Annapolis, MD 21401">
+                            McAtee Group of Taylor Properties,
+                            175 Admiral Cochrane Drive, #112, Annapolis, MD 21401
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-details-text-container contact-details-text-container-2">
+                    <div class="align-right-container">
+                        <div class="contact-details-text line-3">McAtee Group Number: <a href="#" class="copy-link" data-copy-text="(240) 595-2680">(240) 595-2680</a></div>
+                        <div class="contact-details-text line-4">Broker Office Number: <a href="#" class="copy-link" data-copy-text="800-9134326">(800) 913-4326</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="google-maps-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.7829327787776!2d-76.55245172362616!3d38.9746242421432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7f6c5570a20c3%3A0x6365e0bf6e65a1d5!2sTaylor%20Properties!5e0!3m2!1sen!2sie!4v1682958047470!5m2!1sen!2sie" width="1000" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="btn google-maps-btn">Get Directions</div>
+            </div>
+        </div>
+    </section>
+
+    <div class="contact-section-old">
         <div class="contact-container">
             <div class="contact-heading">Contact Us</div>
             <div class="contact-content-container">
@@ -94,9 +152,9 @@
                 </div>
                 <div class="contact-details-container">
                     <div class="contact-details">
-                        <div class="contact-details-text">Email: <a href="#" class="copy-link" data-copy-text="INFO@mcateegroup.com">INFO@mcateegroup.com</a></div>
+                        <div class="contact-details-text">Email: <a href="#" class="copy-link" data-copy-text="INFO@mcateegroup.com">info@mcateegroup.com</a></div>
                         <div class="contact-details-text">McAtee Group Number: <a href="#" class="copy-link" data-copy-text="(240) 595-2680">(240) 595-2680</a></div>
-                        <div class="contact-details-text">Broker Office Number: <a href="#" class="copy-link" data-copy-text="800-9134326">800-9134326</a></div>
+                        <div class="contact-details-text">Broker Office Number: <a href="#" class="copy-link" data-copy-text="800-9134326">(800) 913-4326</a></div>
                         <div class="contact-details-text">
                             Address:
                             <a href="#" class="copy-link" data-copy-text="McAtee Group of Taylor Properties,
@@ -151,7 +209,8 @@
 
     <script src="./assets/js/nav-menu.js"></script>
     <script src="./assets/js/copy-to-clipboard.js"></script>
-    <script src="assets/js/contact.js"></script>
+    <script src="./assets/js/contact.js"></script>
+    <script src="./assets/js/btns.js"></script>
 
 </body>
 </html>

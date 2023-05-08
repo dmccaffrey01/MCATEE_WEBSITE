@@ -86,3 +86,8 @@ function displayNotification(message, btn1, time) {
         notification.classList.remove("active");
     }, time);
 }
+
+const inputContainer2 = document.querySelector('.input-container-2');
+const inputContainer1 = document.querySelector('.input-container-1');
+
+inputContainer1.style.Height = inputContainer2.offsetHeight + 'px';

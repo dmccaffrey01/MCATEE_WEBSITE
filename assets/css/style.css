@@ -10,7 +10,9 @@
 :root {
     --MAIN-BG: #262626;
     --MAIN-TP: #262626e3;
-    --MAIN-MORE-TP: #262626a9;
+    --MAIN-TP-2: #262626c9;
+    --MAIN-TP-3: #2626268f;
+    --LIGHT-TP: #f2f2f27c;
     --LIGHT-GRAY-1: #b0b0b0;
     --LIGHT-GRAY-2: #f2f2f2;
     --GOLD: #b17c28;
@@ -98,7 +100,6 @@ header {
     width: 100%;
     height: 100%;
     text-decoration: none;
-    font-size: 1.5rem;
 }
 
 /* Nav Bar */
@@ -329,14 +330,23 @@ header {
     max-width: none;
 }
 
-.hero-content-container {
+.hero-overlay {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 20px;
-    background-color: var(--MAIN-TP);
-    border-radius: 5px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--MAIN-TP-2);
+}
+
+.hero-content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .hero-slogan {
@@ -357,7 +367,7 @@ header {
 }
 
 .slogan-line.heading {
-    font-size: 3rem;
+    font-size: 3.5rem;
     color: var(--WHITE-TEXT);
 }
 
@@ -377,11 +387,11 @@ header {
 
 .btn {
     background-color: var(--GOLD);
-    padding: 15px;
+    padding: 10px 12px;
     color: var(--WHITE-TEXT);
     border-radius: 5px;
     cursor: pointer;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     text-align: center;
     width: fit-content;
 }
@@ -415,11 +425,12 @@ header {
 }
 
 .intro-container {
-    width: 1000px;
+    width: 1200px;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 100px;
+    margin-left: 100px;
 }
 
 .intro-img-container {
@@ -498,11 +509,12 @@ header {
 }
 
 .choose-container {
-    width: 1000px;
+    width: 1200px;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 100px;
+    margin-right: 100px;
 }
 
 .choose-img-container {
@@ -1084,9 +1096,175 @@ footer {
     }
 }
 
-/* Contact Section */
+/* Contact Seciton */
 
-.contact-section {
+.contact-heading-section {
+    padding: 150px 0 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    max-width: 100%;
+    background-color: var(--LIGHT-GRAY-2);
+}
+
+.contact-heading {
+    font-size: 3.5rem;
+    color: var(--DARK-TEXT);
+}
+
+.contact-dark-section {
+    height: fit-content;
+    padding: 50px 0 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    max-width: 100%;
+    background-color: var(--MAIN-BG);
+}
+
+.contact-form-container {
+    background-color: var(--MAIN-BG);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.contact-form {
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.input-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input-container-1 {
+    min-height: 214px;
+}
+
+.label-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-label {
+    font-size: 2.2rem;
+    color: var(--GOLD);
+}
+
+.form-input {
+    width: 450px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 2px solid var(--LIGHT-GRAY-2);
+    color: var(--DARK-TEXT);
+    font-size: 1.8rem;
+    background-color: var(--LIGHT-GRAY-2);
+}
+
+.form-input:focus {
+    border: 3px solid var(--GOLD);
+    outline: none;
+}
+
+.form-textarea:focus {
+    border: 3px solid var(--MAIN-BG);
+    outline: none;
+}
+
+.send-email-btn {
+    color: var(--WHITE-TEXT);
+    font-size: 2rem;
+    width: 450px;
+    padding: 10px;
+    background-color: var(--GOLD);
+    border-radius: 5px;
+    border: 2px solid var(--WHITE-TEXT);
+    cursor: pointer;
+    display: block;
+    margin: 20px auto 0 auto;
+}
+
+.contact-details-container {
+    width: 1000px;
+    background-color: var(--MAIN-BG);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contact-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.contact-details-text-container {
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.align-right-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: fit-content;
+}
+
+.contact-details-text-container-2 {
+    align-items: flex-end;
+}
+
+.line-3, .line-4 {
+    display: inline-block;
+    text-align: left;
+}
+
+.contact-details-text {
+    color: var(--WHITE-TEXT);
+    font-size: 1.3rem;
+}
+
+.contact-details-text a {
+    color: var(--GOLD);
+}
+
+.google-maps-container {
+    width: 1000px;
+    height: 450px;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.google-maps-btn {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    font-size: 1.3rem;
+}
+
+/* Contact Section Old */
+
+
+.contact-section-old {
     height: fit-content;
     padding: 180px 0 100px 0;
     width: 100vw;
@@ -1095,7 +1273,10 @@ footer {
     justify-content: center;
     align-items: center;
     background-color: var(--LIGHT-GRAY-2);
+    display: none;
 }
+
+/*
 
 .contact-container {
     width: 1000px;
@@ -1107,7 +1288,7 @@ footer {
 }
 
 .contact-heading {
-    font-size: 3rem;
+    font-size: 3.5rem;
     color: var(--DARK-TEXT);
 }
 
@@ -1115,6 +1296,9 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: var(--MAIN-BG);
+    padding: 70px;
+    border-radius: 5px;
     gap: 50px;
 }
 
@@ -1220,6 +1404,8 @@ footer {
     font-size: 1.3rem;
 }
 
+*/
+
 @media (max-width: 1100px) {
     
     .contact-section {
@@ -1304,14 +1490,40 @@ footer {
 
 /* Buy Hero */
 
-.buy-hero-content-container {
-    background-color: var(--MAIN-MORE-TP);
-    width: 800px;
-    padding: 30px 30px 10px 30px;
+.buy-sell-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--MAIN-TP-3);
 }
 
-.hero-slogan .buy {
-    width: 100%;
+.buy-sell-hero-content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 800px;
+}
+
+.buy-sell-hero-content-container .heading {
+    font-size: 3.5rem;
+}
+
+.buy-sell-hero-content-container .subheading {
+    font-size: 2rem;
+    color: var(--GOLD);
+}
+
+.buy-sell-text {
+    font-size: 1.5rem;
+    color: var(--WHITE-TEXT);
+    text-align: center;
 }
 
 /* Morals Section */
