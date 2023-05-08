@@ -12,6 +12,9 @@
     <!-- Email JS -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
     </script>
+    <!-- Calendly link widget -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 
     <title>Contact Us</title>
 </head>
@@ -117,6 +120,53 @@
         </div>
         <div class="hero-btns-container">
             <div class="btn contact-btn">Let's Talk</div>
+        </div>
+    </section>
+
+    <section class="coaching-video-section">
+        <div class="coaching-video-section-container">
+            <div class="coaching-video-container">
+                <iframe src="https://www.youtube.com/embed/zpdOGUIw9dA" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="book-call-container">
+            <div class="book-call-heading">Book a Free 10 Minute Call Now!</div>
+            <a href="" class="btn"
+                onclick="Calendly.initPopupWidget({url: 'https://calendly.com/dmccaffrey01?background_color=262626&text_color=ffffff&primary_color=b17c28'});return false;">Book
+                Call</a>
+        </div>
+    </section>
+
+    <section class="contact-heading-section coaching-contact-section">
+        <div class="contact-heading">Alternatively Contact Jenny Directly</div>
+    </section>
+
+    <section class="contact-form-section contact-dark-seciton">
+        <div class="contact-form-container">
+            <form class="contact-form">
+                <div class="input-container input-container-1">
+                    <div class="label-container">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-input contact-name-input" name="name" id="name">
+                    </div>
+                    <div class="label-container">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="text" class="form-input contact-email-input" name="email" id="email">
+                    </div>
+                </div>
+                <div class="input-container input-container-2">
+                    <div class="label-container">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea name="message" id="message" rows="5"
+                            class="form-input contact-message-input">Drop a message to the McAtee Group...</textarea>
+                    </div>
+                </div>
+                <div class="input-container-3">
+                    <input type="submit" class="send-email-btn" value="Send">
+                </div>
+            </form>
         </div>
     </section>
 

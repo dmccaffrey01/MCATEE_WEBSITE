@@ -1305,9 +1305,10 @@ footer {
 /* Notification */
 
 .notification {
-    position: absolute;
+    position: fixed;
     display: none;
-    top: 110px;
+    top: 50%;
+    transform: translateY(-50%);
     z-index: 4;
     width: 100vw;
     max-width: 100%;
@@ -1508,6 +1509,57 @@ footer {
 .coaching-intro-text {
     color: var(--DARK-TEXT);
     font-size: 1.2rem;
+}
+
+.coaching-video-section {
+    height: fit-content;
+    padding: 50px 0 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    width: 100vw;
+    max-width: 100%;
+    background-color: var(--MAIN-BG);
+}
+
+.coaching-video-section-container {
+    width: 1000px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.coaching-video-container {
+    width: 100%;
+    height: 0;
+    padding-top: 56.25%;
+    position: relative;
+}
+
+.coaching-video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.book-call-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.book-call-heading {
+    font-size: 4rem;
+    color: var(--WHITE-TEXT);
+}
+
+.coaching-contact-section {
+    padding: 50px 0;
 }
 
 
