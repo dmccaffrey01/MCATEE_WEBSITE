@@ -20,7 +20,7 @@
       "**/core.python*": true,
       "**/CVS": true
    },
-   "editor.fontSize": 20,
+   "editor.fontSize": 16,
    "editor.codeActionsOnSave": {
       "source.fixAll": true,
       "source.sortImports": true,
