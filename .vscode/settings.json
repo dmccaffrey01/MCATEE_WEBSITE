@@ -20,8 +20,20 @@
       "**/core.python*": true,
       "**/CVS": true
    },
+   "editor.fontSize": 20,
+   "editor.codeActionsOnSave": {
+      "source.fixAll": true,
+      "source.sortImports": true,
+   },
+   "[css]": {
+      "editor.sugggest.insertMode": "replace"
+   },
+   "editor.formatOnSave": true,
    "files.autoSave": "off",
    "workbench.colorTheme": "Visual Studio Dark",
    "terminal.integrated.gpuAcceleration": "canvas",
-   "editor.defaultFormatter": "HookyQR.beautify"
+   "editor.defaultFormatter": "HookyQR.beautify",
+   "[html]": {
+      "editor.defaultFormatter": "vscode.html-language-features"
+   }
 }
