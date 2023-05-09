@@ -26,7 +26,8 @@
       "source.sortImports": true,
    },
    "[css]": {
-      "editor.sugggest.insertMode": "replace"
+      "editor.sugggest.insertMode": "replace",
+      "editor.defaultFormatter": "vscode.css-language-features"
    },
    "editor.formatOnSave": true,
    "files.autoSave": "off",
