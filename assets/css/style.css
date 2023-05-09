@@ -421,7 +421,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('../images/abstract-bg-6.png') center/cover no-repeat;
+    background: url('../images/bg-shape-5.png') center/cover no-repeat;
 }
 
 .intro-container {
@@ -506,7 +506,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('../images/geometric-bg-1.jpg') center/cover no-repeat;
+    background: url('../images/bg-lines-1.png') center/cover no-repeat;
 }
 
 .choose-container {
@@ -586,12 +586,12 @@ header {
 /* Testimonial Section */
 
 .testimonial-section {
-    height: 700px;
+    padding: 100px 0;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: var(--LIGHT-GRAY-2);
+    background: url('../images/bg-shape-5-reversed.png') center/cover no-repeat;
 }
 
 .testimonial-container {
@@ -994,7 +994,7 @@ footer {
     justify-content: center;
     align-items: center;
     justify-content: center;
-    background: url('../images/abstract-bg-6.png') center/cover no-repeat;
+    background: url('../images/bg-shape-5.png') center/cover no-repeat;
     padding: 100px 0;
 }
 
@@ -1584,7 +1584,7 @@ footer {
     gap: 30px;
     width: 100vw;
     max-width: 100%;
-    background: url('../images/abstract-bg-6.png') center/cover no-repeat;
+    background: url('../images/bg-shape-5-reversed.png') center/cover no-repeat;
 }
 
 .coaching-intro-container {
@@ -1601,6 +1601,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .coaching-intro-text {
@@ -1637,7 +1638,7 @@ footer {
 .coaching-video-container iframe {
     position: absolute;
     top: 0;
-    uy left: 0;
+    left: 0;
     width: 100%;
     height: 100%;
 }
@@ -1707,7 +1708,7 @@ footer {
     height: 100vh;
     width: 100vw;
     max-width: 100%;
-    background: url('../images/abstract-bg-6.png') center/cover no-repeat;
+    background: url('../images/bg-shape-5.png') center/cover no-repeat;
 }
 
 .content-404 {
