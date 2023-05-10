@@ -15,7 +15,9 @@
     --LIGHT-TP: #f2f2f27c;
     --LIGHT-GRAY-1: #b0b0b0;
     --LIGHT-GRAY-2: #f2f2f2;
-    --GOLD: #b17c28;
+    --GOLD: #bb993f;
+    --GOLD-1: #b17c28;
+    --GOLD-2: #bb993f;
     --BLUE: #323a47;
     --GREEN: #006400;
     --DARK-TEXT: #262626;
@@ -25,7 +27,7 @@
 }
 
 body {
-    background-color: var(--LIGHT-GRAY-2);
+    background-color: var(--MAIN-BG);
     min-height: 100vh;
     position: relative;
     font-family: "Josefin Sans", sans-serif;
@@ -387,7 +389,7 @@ header {
 
 .btn {
     background-color: var(--GOLD);
-    padding: 10px 12px;
+    padding: 12px 14px;
     color: var(--WHITE-TEXT);
     border-radius: 5px;
     cursor: pointer;
@@ -416,21 +418,30 @@ header {
 
 .intro-section {
     height: fit-content;
-    padding: 100px 0;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('../images/bg-shape-5.png') center/cover no-repeat;
+}
+
+.border-tb {
+    border-bottom: 7px solid var(--GOLD);
+    border-top: 7px solid var(--GOLD);
 }
 
 .intro-container {
-    width: 1200px;
+    width: calc(100% - 400px);
+    padding: 100px 0;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 100px;
-    margin-left: 100px;
+    background-color: var(--LIGHT-GRAY-2);
+}
+
+.border-sides {
+    border-left: 7px solid var(--GOLD);
+    border-right: 7px solid var(--GOLD);
 }
 
 .intro-img-container {
@@ -506,7 +517,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('../images/bg-lines-1.png') center/cover no-repeat;
+    background: var(--MAIN-BG)
 }
 
 .choose-container {
@@ -515,7 +526,8 @@ header {
     justify-content: center;
     align-items: center;
     gap: 100px;
-    margin-right: 100px;
+    padding: 100px 0;
+    border: 7px solid var(--GOLD);
 }
 
 .choose-img-container {
@@ -586,21 +598,21 @@ header {
 /* Testimonial Section */
 
 .testimonial-section {
-    padding: 100px 0;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('../images/bg-shape-5-reversed.png') center/cover no-repeat;
 }
 
 .testimonial-container {
-    width: 1000px;
+    width: calc(100% - 400px);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 20px;
+    padding: 100px 0;
+    background-color: var(--LIGHT-GRAY-2);
 }
 
 .testimonial-heading {
@@ -665,11 +677,24 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: url('../images/bg-quote.jpg') center/cover no-repeat;
+    position: relative;
 }
 
 .testimonial-quote-text {
     color: var(--WHITE-TEXT);
     font-size: 1.2rem;
+    z-index: 4;
+}
+
+.quote-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--MAIN-TP-3);
+    z-index: 3;
 }
 
 .swipe-wrapper {
@@ -789,6 +814,7 @@ header {
         width: 190px;
         padding: 5px 2px 5px 5px;
         align-items: center;
+        background: var(--MAIN-BG);
     }
 
     .testimonial-quote-text {
@@ -925,6 +951,16 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+}
+
+.border {
+    width: 100%;
+    height: 7px;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    background-color: var(--GOLD);
 }
 
 .about-us-container {
@@ -933,6 +969,8 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 50px;
+    border: 7px solid var(--GOLD);
+    padding: 50px 100px 50px 50px;
 }
 
 .about-us-img-container {
@@ -994,23 +1032,24 @@ footer {
     justify-content: center;
     align-items: center;
     justify-content: center;
-    background: url('../images/bg-shape-5.png') center/cover no-repeat;
-    padding: 100px 0;
 }
 
 .team-container {
-    width: 1000px;
+    width: calc(100% - 400px);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 50px;
+    padding: 100px 0;
+    background-color: var(--LIGHT-GRAY-2);
 }
 
 .meet-the-team-heading {
     color: var(--DARK-TEXT);
     font-size: 3rem;
     text-align: center;
+    text-decoration: underline;
 }
 
 .team-person-container {
@@ -1576,7 +1615,6 @@ footer {
 /* Coaching Section */
 
 .coaching-intro-section {
-    padding: 150px 0 50px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1584,29 +1622,67 @@ footer {
     gap: 30px;
     width: 100vw;
     max-width: 100%;
-    background: url('../images/bg-shape-5-reversed.png') center/cover no-repeat;
+    background-color: var(--LIGHT-GRAY-2);
+    padding: 100px 0;
 }
 
 .coaching-intro-container {
     width: 1000px;
+    padding: 100px 0 0 0;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 50px;
+    background-color: var(--LIGHT-GRAY-2);
+}
+
+.coaching-background-container {
+    background: url('../images/bg-coaching-2.png') no-repeat center center;
+    background-size: cover;
+    width: 1000px;
+    height: 562px;
+    position: relative;
+    border: 20px solid var(--MAIN-BG);
+}
+
+.coaching-intro-card-img-container {
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.coaching-intro-card-img {
+    width: 100%;
+    height: auto;
 }
 
 .coaching-intro-text-container {
-    width: 500px;
-    height: 450px;
+    width: 650px;
+    padding: 50px;
+    height: fit-content;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: absolute;
+    left: 55%;
+    top: 55%;
+    transform: translate(-50%, -50%);
 }
 
 .coaching-intro-text {
     color: var(--DARK-TEXT);
-    font-size: 1.2rem;
+    font-size: 1.15rem;
+}
+
+.coaching-intro-btn-container {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
 }
 
 .coaching-video-section {
@@ -1708,7 +1784,7 @@ footer {
     height: 100vh;
     width: 100vw;
     max-width: 100%;
-    background: url('../images/bg-shape-5.png') center/cover no-repeat;
+    background: var(--LIGHT-GRAY);
 }
 
 .content-404 {
