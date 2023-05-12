@@ -1618,7 +1618,6 @@ footer {
     width: 550px;
     height: 100%;
     position: relative;
-    overflow: hidden;
 }
 
 .roadmap-middle-gap {
@@ -1752,6 +1751,44 @@ footer {
 .roadmap-icon-container-8 {
     right: 30px;
     top: 20px;
+}
+
+.roadmap-piece-popup-container {
+    position: absolute;
+    background-color: var(--MAIN-BG);
+    width: 750px;
+    height: 220px;
+    outline: 10px solid var(--GOLD);
+    outline-offset: -10px;
+    display: none;
+}
+
+.roadmap-piece-popup-container.clicked {
+    display: flex;
+}
+
+.piece-popup-container-a {
+    border-radius: 100px 1000px 100px 1000px;
+    top: 0px;
+    left: calc(100% - 220px);
+}
+
+.piece-popup-container-b {
+    border-radius: 100px 1000px 100px 1000px;
+    bottom: 0px;
+    right: calc(100% - 220px);
+}
+
+.piece-popup-container-c {
+    border-radius: 1000px 100px 1000px 100px;
+    top: 0px;
+    right: calc(100% - 220px);
+}
+
+.piece-popup-container-d {
+    border-radius: 1000px 100px 1000px 100px;
+    bottom: 0px;
+    left: calc(100% - 220px);
 }
 
 /* Coaching Section */

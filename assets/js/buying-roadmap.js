@@ -1,4 +1,5 @@
 const pieceContainers = document.querySelectorAll('.roadmap-piece-container');
+const popupContainers = document.querySelectorAll('.roadmap-piece-popup-container');
 
 const getImage = (pieceContainer) => {
     return pieceContainer.querySelector('.roadmap-piece-img');
@@ -32,14 +33,18 @@ pieceContainers.forEach((pieceContainer, index) => {
     let image = getImage(pieceContainer);
     let imageSrc = getImageSrc(index);
     let borderSrc = getImageBorder(imageSrc);
+
+    let popupContainer = popupContainers[index];
     
     pieceContainer.addEventListener('mouseenter', () => {
         addImageBorder(image, borderSrc);
+        popupContainer.classList.add('clicked');
     });
 
     pieceContainer.addEventListener('mouseleave', () => {
         if (!pieceContainer.classList.contains('clicked')) {
             resetImage(image, imageSrc);
+            popupContainer.classList.remove('clicked');
         } else {
             return;
         }
@@ -50,9 +55,11 @@ pieceContainers.forEach((pieceContainer, index) => {
             pieceContainer.classList.add('clicked');
             removeOtherClickedPieces(index);
             addImageBorder(image, borderSrc);
+            popupContainer.classList.add('clicked');
         } else {
             pieceContainer.classList.remove('clicked');
             resetImage(image, imageSrc);
+            popupContainer.classList.remove('clicked');
         }
     });
 })
@@ -64,7 +71,8 @@ const removeOtherClickedPieces = (index) => {
             let newImage = getImage(newPieceContainer);
             let newImageSrc = getImageSrc(newIndex);
             resetImage(newImage, newImageSrc);
-            console.log(newIndex, newImage, newImageSrc);
+            let popupContainer = popupContainers[newIndex];
+            popupContainer.classList.remove('clicked');
         }
     })
 }
