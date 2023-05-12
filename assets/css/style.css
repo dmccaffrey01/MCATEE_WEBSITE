@@ -1603,13 +1603,74 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: var(--LIGHT-GRAY-2);
 }
 
-.roadmap-img-container {
-    width: 100%;
+.roadmap-container {
+    width: 1050px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.roadmap-side {
+    width: 550px;
+    height: 5000px;
+    position: relative;
+    overflow: hidden;
+}
+
+.roadmap-middle-gap {
+    width: 50px;
+    height: 5000px;
+}
+
+.roadmap-piece-img {
+    width: 500px;
+    height: 500px;
+}
+
+.roadmap-piece-container {
+    position: absolute;
+}
+
+.roadmap-piece-1-container {
+    right: 0;
+}
+
+.roadmap-piece-2-container {
+    left: 0;
+    top: 250px;
+}
+
+.roadmap-piece-3-container {
+    top: 800px;
+    left: 0;
+}
+
+.roadmap-piece-4-container {
+    top: 1050px;
+    right: 0;
+}
+
+.roadmap-piece-5-container {
+    top: 1600px;
+    left: 0;
+}
+
+.roadmap-piece-6-container {
+    top: 1850px;
+    right: 0;
+}
+
+.roadmap-piece-7-container {
+    top: 2400px;
+    right: 0;
+}
+
+.roadmap-piece-8-container {
+    top: 2650px;
+    left: 0;
 }
 
 /* Coaching Section */
