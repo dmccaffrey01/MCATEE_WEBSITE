@@ -1632,6 +1632,7 @@ footer {
 
 .roadmap-piece-container {
     position: absolute;
+    cursor: pointer;
 }
 
 .roadmap-piece-1-container {
