@@ -434,6 +434,7 @@ header {
 .intro-container {
     width: calc(100% - 400px);
     padding: 100px 0;
+    margin-top: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -534,7 +535,6 @@ header {
 .choose-img-container {
     width: 400px;
     height: 400px;
-    border-radius: 5px;
     overflow: hidden;
 }
 
@@ -1061,7 +1061,7 @@ footer {
     align-items: center;
     gap: 50px;
     position: relative;
-    padding: 250px 0 250px 0;
+    padding: 250px 0 180px 0;
     z-index: 2;
     background-color: var(--MAIN-BG);
 }
@@ -1076,8 +1076,6 @@ svg.top {
     top: 0;
     transform: rotate(180deg);
 }
-
-
 
 .team-person-container:nth-child(odd) {
     flex-direction: row-reverse;
@@ -1802,7 +1800,8 @@ svg.top {
     position: absolute;
     background-color: var(--MAIN-BG);
     width: 750px;
-    height: 220px;
+    height: 460px;
+    border-radius: 210px;
     outline: 14px solid var(--GOLD);
     outline-offset: -14px;
     display: none;
@@ -1812,28 +1811,36 @@ svg.top {
     display: flex;
 }
 
-.piece-popup-container-a {
-    border-radius: 100px 1000px 100px 1000px;
-    top: 0px;
-    left: calc(100% - 220px);
+.piece-popup-container-1 {
+    bottom: -500px;
+    right: -240px;
 }
 
-.piece-popup-container-b {
-    border-radius: 100px 1000px 100px 1000px;
-    bottom: 0px;
-    right: calc(100% - 220px);
+.piece-popup-container-2,
+.piece-popup-container-6 {
+    bottom: -250px;
+    left: -555px;
 }
 
-.piece-popup-container-c {
-    border-radius: 1000px 100px 1000px 100px;
-    top: 0px;
-    right: calc(100% - 220px);
+.piece-popup-container-3,
+.piece-popup-container-7 {
+    top: -256px;
+    left: -555px;
 }
 
-.piece-popup-container-d {
-    border-radius: 1000px 100px 1000px 100px;
-    bottom: 0px;
-    left: calc(100% - 220px);
+.piece-popup-container-4 {
+    bottom: -250px;
+    right: -555px;
+}
+
+.piece-popup-container-5 {
+    top: -256px;
+    right: -555px;
+}
+
+.piece-popup-container-8 {
+    top: -506px;
+    right: -245px;
 }
 
 /* Buying Link Section */
@@ -1903,6 +1910,7 @@ svg.top {
     transform-style: preserve-3d;
     transform-origin: center right;
     transition: transform 1s;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.6);
 }
 
 .card.is-flipped {
@@ -2013,7 +2021,7 @@ svg.top {
 
 .coaching-video-section {
     height: fit-content;
-    padding: 50px 0 50px 0;
+    padding: 100px 0 100px 0;
     display: flex;
     justify-content: center;
     align-items: center;
