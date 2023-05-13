@@ -1802,45 +1802,55 @@ svg.top {
     width: 750px;
     height: 460px;
     border-radius: 210px;
-    outline: 14px solid var(--GOLD);
-    outline-offset: -14px;
-    display: none;
+    height: 0px;
+    width: 0px;
+    transition: all 0.3s ease;
 }
 
 .roadmap-piece-popup-container.clicked {
-    display: flex;
+    height: 460px;
+    width: 750px;
+    outline: 14px solid var(--GOLD);
+    outline-offset: -14px;
+    transform: translate(0px, 0px);
 }
 
 .piece-popup-container-1 {
     bottom: -500px;
     right: -240px;
+    transform: translate(-375px, -230px);
 }
 
 .piece-popup-container-2,
 .piece-popup-container-6 {
     bottom: -250px;
     left: -555px;
+    transform: translate(375px, -230px);
 }
 
 .piece-popup-container-3,
 .piece-popup-container-7 {
     top: -256px;
     left: -555px;
+    transform: translate(375px, 230px);
 }
 
 .piece-popup-container-4 {
     bottom: -250px;
     right: -555px;
+    transform: translate(-375px, -230px);
 }
 
 .piece-popup-container-5 {
     top: -256px;
     right: -555px;
+    transform: translate(-375px, 230px);
 }
 
 .piece-popup-container-8 {
     top: -506px;
     right: -245px;
+    transform: translate(-375px, 230px);
 }
 
 /* Buying Link Section */
