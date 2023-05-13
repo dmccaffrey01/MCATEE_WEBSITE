@@ -341,7 +341,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--MAIN-TP-2);
+    background-color: var(--MAIN-TP-3);
 }
 
 .hero-content-container {
@@ -352,7 +352,7 @@ header {
 }
 
 .hero-slogan {
-    padding: 20px;
+    padding: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -364,18 +364,20 @@ header {
     color: var(--WHITE-TEXT);
     font-size: 2rem;
     text-align: center;
-    padding: 5px 0;
+    padding: 0;
     width: 400px;
 }
 
 .slogan-line.heading {
     font-size: 3.5rem;
     color: var(--WHITE-TEXT);
+    padding: 0;
 }
 
 .slogan-line.sub-heading {
     font-size: 1.8rem;
     color: var(--GOLD);
+    padding: 0px 0 20px 0;
 }
 
 .hero-btns-container {
@@ -445,9 +447,8 @@ header {
 }
 
 .intro-img-container {
-    width: 400px;
-    height: 400px;
-    border-radius: 5px;
+    width: 500px;
+    height: 500px;
     overflow: hidden;
 }
 
@@ -1035,21 +1036,22 @@ footer {
 }
 
 .team-container {
-    width: calc(100% - 400px);
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 50px;
     padding: 100px 0;
     background-color: var(--LIGHT-GRAY-2);
+    position: relative;
 }
 
 .meet-the-team-heading {
-    color: var(--DARK-TEXT);
+    color: var(--GOLD);
     font-size: 3rem;
     text-align: center;
     text-decoration: underline;
+    margin-bottom: 100px;
 }
 
 .team-person-container {
@@ -1058,10 +1060,29 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 50px;
+    position: relative;
+    padding: 250px 0 250px 0;
+    z-index: 2;
+    background-color: var(--MAIN-BG);
 }
+
+.team-person-container svg {
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+}
+
+svg.top {
+    top: 0;
+    transform: rotate(180deg);
+}
+
+
 
 .team-person-container:nth-child(odd) {
     flex-direction: row-reverse;
+    background-color: var(--LIGHT-GRAY-2);
+    padding: 50px 0;
 }
 
 .team-person-img-container {
@@ -1084,11 +1105,16 @@ footer {
     align-items: center;
     flex-direction: column;
     gap: 20px;
-    color: var(--DARk-TEXT);
+    color: var(--WHITE-TEXT);
+}
+
+.tp-odd {
+    color: var(--DARK-TEXT);
 }
 
 .team-person-heading {
     font-size: 2rem;
+    color: var(--GOLD);
 }
 
 .team-person-text {
@@ -1484,10 +1510,6 @@ footer {
     width: 800px;
 }
 
-.buy-sell-hero-content-container .heading {
-    font-size: 3.5rem;
-}
-
 .buy-sell-hero-content-container .subheading {
     font-size: 2rem;
     color: var(--GOLD);
@@ -1497,6 +1519,21 @@ footer {
     font-size: 1.5rem;
     color: var(--WHITE-TEXT);
     text-align: center;
+}
+
+.buy-sell-heading {
+    font-size: 3.5rem;
+    position: relative;
+}
+
+.buy-sell-heading::after {
+    position: absolute;
+    content: '';
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: var(--GOLD);
 }
 
 @media (max-width: 1000px) {
@@ -1556,8 +1593,9 @@ footer {
 }
 
 .morals-icon-container {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
+    padding: 20px;
     border-radius: 50%;
     overflow: hidden;
     background-color: var(--GOLD);
@@ -1603,7 +1641,14 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap: 70px;
     background-color: var(--LIGHT-GRAY-2);
+}
+
+.roadmap-heading {
+    font-size: 5rem;
+    color: var(--DARK-TEXT);
 }
 
 .roadmap-container {
@@ -1758,8 +1803,8 @@ footer {
     background-color: var(--MAIN-BG);
     width: 750px;
     height: 220px;
-    outline: 10px solid var(--GOLD);
-    outline-offset: -10px;
+    outline: 14px solid var(--GOLD);
+    outline-offset: -14px;
     display: none;
 }
 
@@ -1789,6 +1834,41 @@ footer {
     border-radius: 1000px 100px 1000px 100px;
     bottom: 0px;
     left: calc(100% - 220px);
+}
+
+/* Buying Link Section */
+
+.buying-link-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    max-width: 100%;
+    background: url('../images/buying-link-bg.png') center/cover no-repeat;
+    padding: 50px 0 150px 0;
+    position: relative;
+}
+
+.buying-link-container {
+    width: 1000px;
+    padding: 100px 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    z-index: 5;
+}
+
+.buying-link-heading {
+    font-size: 4rem;
+    color: var(--WHITE-TEXT);
+}
+
+.buying-link-text {
+    width: 600px;
+    font-size: 1.5rem;
+    color: var(--WHITE-TEXT);
 }
 
 /* Coaching Section */
