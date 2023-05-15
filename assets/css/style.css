@@ -1174,14 +1174,13 @@ svg.top {
 }
 
 .contact-heading {
-    font-size: 3.5rem;
+    font-size: 5rem;
     color: var(--DARK-TEXT);
     text-align: center;
 }
 
 .contact-dark-section {
-    height: fit-content;
-    padding: 50px 0 50px 0;
+    padding: 100px 0 100px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1195,6 +1194,8 @@ svg.top {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap: 50px;
     padding: 50px 0;
 }
 
@@ -1258,13 +1259,41 @@ svg.top {
     border: 2px solid var(--WHITE-TEXT);
     cursor: pointer;
     display: block;
-    margin: 20px auto 0 auto;
+    margin: 70px auto 0 auto;
+}
+
+.contact-details-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    background-color: var(--MAIN-BG);
+}
+
+.contact-details-section-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    padding: 0 0 100px 0;
+}
+
+.contact-details-heading {
+    font-size: 4rem;
+    color: var(--WHITE-TEXT);
 }
 
 .contact-details-container {
     width: 1000px;
-    background: var(--MAIN-BG);
-    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.contact-details-col {
+    width: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1272,44 +1301,68 @@ svg.top {
     gap: 30px;
 }
 
-.contact-details {
+.contact-details-icon-container {
+    width: 130px;
+    height: 130px;
+    padding: 20px;
+    border-radius: 50%;
+    background-color: var(--GOLD);
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.contact-details-icon {
     width: 100%;
+    height: auto;
 }
 
-.contact-details-text-container {
-    width: 450px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.align-right-container {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: fit-content;
-}
-
-.contact-details-text-container-2 {
-    align-items: flex-end;
-}
-
-.line-3,
-.line-4 {
-    display: inline-block;
-    text-align: left;
-}
-
-.contact-details-text {
+.contact-details-col-heading {
+    font-size: 1.8rem;
     color: var(--WHITE-TEXT);
-    font-size: 1.3rem;
+    text-transform: uppercase;
+    text-align: center;
 }
 
-.contact-details-text a {
+.contact-details-info-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-details-info-heading {
+    font-size: 1.5rem;
+    color: var(--WHITE-TEXT);
+}
+
+.contact-details-info-text {
+    font-size: 1.2rem;
+    text-align: center;
     color: var(--GOLD);
+    padding: 0 30px;
+}
+
+.contact-details-info-text a {
+    color: var(--GOLD);
+}
+
+.google-maps-section {
+    width: 100%;
+    padding: 0 0 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--MAIN-BG);
+}
+
+.google-maps-section-container {
+    width: 950px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .google-maps-container {
@@ -1317,7 +1370,6 @@ svg.top {
     width: 100%;
     height: 0;
     padding-bottom: 40%;
-    border-radius: 5px;
     overflow: hidden;
 }
 
@@ -1325,7 +1377,7 @@ svg.top {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 950px;
     height: 100%;
 }
 
@@ -1364,16 +1416,15 @@ svg.top {
     background-color: var(--GOLD);
     width: 130px;
     height: 130px;
-    border: 10px solid var(--MAIN-BG)
 }
 
 .social-icon-container i {
-    font-size: 4rem;
+    font-size: 5.5rem;
     color: var(--WHITE-TEXT);
 }
 
 .social-media-links-heading {
-    font-size: 4rem;
+    font-size: 3.5rem;
     color: var(--MAIN-BG);
     text-align: center;
 }

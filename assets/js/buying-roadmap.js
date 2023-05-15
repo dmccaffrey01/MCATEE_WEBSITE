@@ -38,7 +38,9 @@ pieceContainers.forEach((pieceContainer, index) => {
     
     pieceContainer.addEventListener('mouseenter', () => {
         addImageBorder(image, borderSrc);
-        popupContainer.classList.add('clicked');
+        window.setTimeout(() => {
+            popupContainer.classList.add('clicked');
+        }, 400);
     });
 
     pieceContainer.addEventListener('mouseleave', () => {
