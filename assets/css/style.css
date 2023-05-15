@@ -59,7 +59,6 @@ header {
 .header-container {
     height: 100px;
     width: calc(100vw - 80px);
-    max-width: 1000px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -220,7 +219,7 @@ header {
     /* Nav Bar */
 
     .nav-menu {
-        width: 400px;
+        width: 700px;
         gap: 40px;
     }
 
@@ -407,7 +406,7 @@ header {
     }
 
     .slogan-line {
-        width: 250px;
+        width: calc(100% - 40px);
     }
 
     .hero-btns-container {
@@ -432,8 +431,8 @@ header {
 }
 
 .intro-container {
-    width: calc(100% - 400px);
-    padding: 100px 0;
+    width: 1400px;
+    padding: 150px 0;
     margin-top: 100px;
     display: flex;
     justify-content: center;
@@ -455,7 +454,7 @@ header {
 
 .intro-img-container img {
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 
 .intro-content-container {
@@ -482,31 +481,73 @@ header {
     margin: 20px 0 0 0;
 }
 
-@media (max-width: 1000px) {
-
-    .intro-section {
-        height: fit-content;
+@media (max-width: 1400px) {
+    .intro-container {
+        width: 1000px;
+        gap: 50px;
         padding: 50px 0;
     }
 
+    .intro-img-container {
+        width: 400px;
+        height: 400px;
+    }
+
+    .intro-content-container {
+        height: 300px;
+        width: 450px;
+    }
+
+    .intro-text {
+        font-size: 1.1rem;
+        padding: 6px;
+    }
+
+    .intro-text.heading {
+        padding: 0 0 10px 0;
+    }
+
+    .intro-btn {
+        margin: 10px 0 0 0;
+    }
+}
+
+@media (max-width: 1000px) {
+
     .intro-container {
         flex-direction: column;
-        width: 300px;
+        width: 100%;
         margin: 0;
     }
 
     .intro-img-container {
-        width: 300px;
-        height: 300px;
+        width: 500px;
+        height: 500px;
     }
 
     .intro-content-container {
-        width: 300px;
+        width: calc(100% - 200px);
         height: fit-content;
+    }
+
+    .intro-text.heading {
+        text-align: center;
     }
 
     .intro-btn {
         align-self: center;
+    }
+}
+
+@media (max-width: 650px) {
+    .intro-img-container {
+        width: calc(100% - 80px);
+        height: 0;
+        padding-bottom: calc(100% - 80px);
+    }
+
+    .intro-content-container {
+        width: calc(100% - 80px);
     }
 }
 
@@ -540,7 +581,7 @@ header {
 
 .choose-img-container img {
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 
 .choose-content-container {
@@ -568,33 +609,82 @@ header {
     align-self: flex-end;
 }
 
+@media (max-width: 1400px) {
+    .choose-container {
+        width: 1000px;
+        gap: 50px;
+        padding: 50px 0;
+    }
+
+    .choose-img-container {
+        width: 400px;
+        height: 400px;
+    }
+
+    .choose-content-container {
+        height: 300px;
+        width: 450px;
+    }
+
+    .choose-text {
+        font-size: 1.1rem;
+        padding: 6px;
+    }
+
+    .choose-text.heading {
+        padding: 0 0 10px 0;
+    }
+
+    .choose-btn {
+        margin: 10px 0 0 0;
+    }
+}
+
 @media (max-width: 1000px) {
 
     .choose-section {
-        height: fit-content;
-        padding: 50px 0;
+        padding: 20px 0;
     }
 
     .choose-container {
         flex-direction: column-reverse;
-        width: 300px;
+        width: 100%;
         margin: 0;
+        border: none;
     }
 
     .choose-img-container {
-        width: 300px;
-        height: 300px;
+        width: 500px;
+        height: 500px;
     }
 
     .choose-content-container {
-        width: 300px;
+        width: calc(100% - 200px);
         height: fit-content;
+    }
+
+    .choose-text.heading {
+        align-self: center;
     }
 
     .choose-btn {
         align-self: center;
+        margin: 30px 0 0 0;
     }
 }
+
+@media (max-width: 650px) {
+    .choose-img-container {
+        width: calc(100% - 80px);
+        height: 0;
+        padding-bottom: calc(100% - 80px);
+    }
+
+    .choose-content-container {
+        width: calc(100% - 80px);
+    }
+}
+
 
 /* Testimonial Section */
 
@@ -764,11 +854,21 @@ header {
     background-color: var(--MAIN-BG);
 }
 
+@media (max-width: 1400px) {
+    .testimonial-section {
+        background-color: var(--LIGHT-GRAY-2);
+    }
+}
+
 @media (max-width: 1000px) {
 
     .testimonial-section {
         height: fit-content;
         padding: 50px 0 200px 0;
+    }
+
+    .testimonial-container {
+        padding: 0;
     }
 
     .testimonial-heading {
@@ -1515,9 +1615,10 @@ svg.top {
 .notification-container {
     width: 300px;
     height: fit-content;
-    padding: 20px;
+    padding: 30px 30px 20px 30px;
     border-radius: 5px;
     background-color: var(--MAIN-TP);
+    border: 3px solid var(--WHITE-TEXT);
     display: flex;
     justify-content: center;
     align-items: center;
