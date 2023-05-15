@@ -1,1 +1,0 @@
-redirect_to: https://us02web.zoom.us/j/4146842904
