@@ -1,0 +1,5 @@
+plugins:
+  - jekyll-redirect-from
+  - jekyll-sitemap
+redirect_from:
+  - /zoom: https://us02web.zoom.us/j/4146842904
