@@ -1,2 +1,3 @@
-RewriteEngine On
-RewriteRule ^zoom/?$ https://us02web.zoom.us/j/4146842904 [R=301,L]
+ErrorDocument 404 /404.html
+
+Redirect 301 /zoom https://www.external-link.com
