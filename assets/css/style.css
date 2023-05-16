@@ -967,6 +967,11 @@ footer {
     font-family: "Source-Sans-Pro", sans-serif;
 }
 
+.footer-padding-bottom {
+    width: 100%;
+    padding-bottom: 150px;
+}
+
 .footer-container {
     height: 100px;
     width: calc(100vw - 80px);
@@ -1399,6 +1404,8 @@ svg.top {
     margin: 70px auto 0 auto;
 }
 
+/* Contact Details Section */
+
 .contact-details-section {
     display: flex;
     justify-content: center;
@@ -1486,6 +1493,15 @@ svg.top {
     color: var(--GOLD);
 }
 
+@media (max-width: 1000px) {
+    .contact-details-container {
+        flex-direction: column;
+        gap: 70px;
+    }
+}
+
+/* Google Maps Section */
+
 .google-maps-section {
     width: 100%;
     padding: 0 0 100px 0;
@@ -1525,6 +1541,8 @@ svg.top {
     transform: translateX(-50%);
     font-size: 1.3rem;
 }
+
+/* Social Links Section */
 
 .social-media-links-section {
     background-color: var(--LIGHT-GRAY-2);
@@ -1609,11 +1627,12 @@ svg.top {
     }
 
     .google-maps-container {
-        width: 300px;
-        height: 300px;
+        width: calc(100% - 100px);
+        padding-bottom: 300px;
     }
 
     .google-maps-container iframe {
+        width: 100%;
         height: 300px;
     }
 
@@ -1630,6 +1649,13 @@ svg.top {
         font-size: 3rem;
     }
 
+}
+
+@media (max-width: 500px) {
+    .google-maps-container {
+        width: 300px;
+        padding-bottom: 300px;
+    }
 }
 
 /* Notification */
@@ -1725,8 +1751,18 @@ svg.top {
 }
 
 @media (max-width: 1000px) {
+
+
     .buy-sell-hero-content-container {
-        width: 300px;
+        width: calc(100% - 200px);
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .buy-sell-hero-content-container {
+        width: calc(100% - 80px);
     }
 }
 
@@ -2438,7 +2474,7 @@ svg.top {
 
     .buying-link-container {
         width: 100%;
-        padding: 100px 100px 250px 100px;
+        padding: 100px 100px 150px 100px;
     }
 
     .buying-link-heading {
@@ -2452,7 +2488,7 @@ svg.top {
 
 @media (max-width: 650px) {
     .buying-link-container {
-        padding: 50px 50px 250px 50px;
+        padding: 50px 50px 150px 50px;
     }
 
     .buying-link-heading {
@@ -2473,7 +2509,7 @@ svg.top {
     align-items: center;
     flex-direction: column;
     gap: 30px;
-    width: 100vw;
+    width: 100%;
     max-width: 100%;
     background-color: var(--LIGHT-GRAY-2);
     padding: 100px 0;
@@ -2485,7 +2521,6 @@ svg.top {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
     background-color: var(--LIGHT-GRAY-2);
 }
 
@@ -2606,6 +2641,105 @@ svg.top {
     align-items: center;
 }
 
+@media (max-width: 1000px) {
+    .coaching-intro-container {
+        width: 100%;
+    }
+
+    .card {
+        width: calc(100% - 200px);
+        height: 0;
+        padding-bottom: calc(100% - 200px);
+    }
+}
+
+@media (max-width: 850px) {
+    .coaching-intro-card-img-text-container .heading {
+        font-size: 2rem;
+    }
+
+    .coaching-intro-card-img-text-container .subheading {
+        font-size: 1.5rem;
+    }
+
+    .coaching-intro-card-img-text {
+        font-size: 1.5rem;
+    }
+
+    .coaching-intro-text-container {
+        padding: 30px;
+        gap: 30px;
+    }
+
+    .coaching-intro-text {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .card {
+        width: calc(100% - 80px);
+        height: 0;
+        padding-bottom: calc(100% - 80px);
+    }
+
+    .coaching-intro-card-img-text-container {
+        padding: 20px;
+    }
+
+    .coaching-intro-card-img-text-container .heading {
+        font-size: 1.5rem;
+    }
+
+    .coaching-intro-card-img-text-container .subheading {
+        font-size: 1.2rem;
+    }
+
+    .coaching-intro-card-img-text {
+        font-size: 1.2rem;
+    }
+
+    .coaching-intro-text-container {
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .coaching-intro-text {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 550px) {
+    .card {
+        width: calc(100% - 40px);
+        height: 0;
+        padding-bottom: calc(100% - 40px);
+    }
+
+    .coaching-intro-card-img-text-container .heading {
+        font-size: 1.3rem;
+    }
+
+    .coaching-intro-card-img-text-container .subheading {
+        font-size: 1rem;
+    }
+
+    .coaching-intro-card-img-text {
+        font-size: 1rem;
+    }
+
+    .coaching-intro-text-container {
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .coaching-intro-text {
+        font-size: 0.8rem;
+    }
+}
+
+/* Coaching Video Section */
+
 .coaching-video-section {
     height: fit-content;
     padding: 100px 0 100px 0;
@@ -2663,27 +2797,12 @@ svg.top {
 }
 
 @media (max-width: 1000px) {
-    .coaching-intro-container {
-        width: 300px;
-        flex-direction: column;
-    }
-
-    .coaching-intro-text-container {
-        width: 320px;
-        height: fit-content;
-        text-align: center;
-    }
-
-    .coaching-intro-text {
-        font-size: 1.1rem;
-    }
-
     .coaching-video-section-container {
-        width: 300px;
+        width: calc(100% - 200px);
     }
 
     .coaching-video-container {
-        padding-top: 200%;
+        padding-top: 56.5%;
     }
 
     .book-call-container {
@@ -2692,10 +2811,17 @@ svg.top {
 
     .book-call-heading {
         font-size: 3rem;
+        width: calc(100% - 80px);
     }
 
     .contact-heading {
         font-size: 3rem;
+    }
+}
+
+@media (max-width: 750px) {
+    .coaching-video-section-container {
+        width: calc(100% - 80px);
     }
 }
 
