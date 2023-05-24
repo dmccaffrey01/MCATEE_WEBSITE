@@ -16,7 +16,7 @@ form.addEventListener("submit", (event) => {
 })
 
 (function(){
-	emailjs.init("zPKR6_gHufVNrHLZT");
+	emailjs.init("C1R_MKyMngtyen65P");
 })();
 
 /**
@@ -43,7 +43,7 @@ function sendEmail() {
 		reply_to: formData.email
 	};
 
-	emailjs.send("service_q2d91ik", "template_0j3zj9k", templateParams, "zPKR6_gHufVNrHLZT")
+	emailjs.send("service_tpbjt5l", "template_ds4svuk", templateParams, "C1R_MKyMngtyen65P")
 		.then(function(response) {
 			console.log('SUCCESS!', response.status, response.text);
 			displayNotification("The message was successfully sent to McAtee Group. Thank you!", "OK", 5000);

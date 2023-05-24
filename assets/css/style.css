@@ -2021,6 +2021,14 @@ svg.top {
 .roadmap-heading {
     font-size: 5rem;
     color: var(--DARK-TEXT);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.roadmap-subheading {
+    font-size: 1.3rem;
+    color: var(--DARK-TEXT);
 }
 
 .roadmap-container {
@@ -2228,7 +2236,146 @@ svg.top {
     transform: translate(-375px, 230px);
 }
 
-@media (max-width: 1100px) {
+.roadmap-text-line {
+    font-size: 1.1rem;
+    color: var(--WHITE-TEXT);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+.line-1-p1 {
+    left: 30px;
+    top: 80px;
+}
+
+.line-2-p1 {
+    left: 35px;
+    top: 110px;
+}
+
+.line-3-p1 {
+    left: 60px;
+    top: 140px;
+}
+
+.line-4-p1 {
+    left: 80px;
+    top: 170px;
+}
+
+.line-1-p4 {
+    left: 110px;
+    top: 130px;
+}
+
+.line-2-p4 {
+    left: 70px;
+    top: 160px;
+}
+
+.line-1-p5 {
+    left: 70px;
+    top: 110px;
+}
+
+.line-2-p5 {
+    left: 100px;
+    top: 140px;
+}
+
+.line-1-p8 {
+    left: 70px;
+    top: 145px;
+}
+
+.line-2-p8 {
+    left: 65px;
+    top: 175px;
+}
+
+.line-1-p2 {
+    left: 120px;
+    top: 130px;
+}
+
+.line-2-p2 {
+    left: 130px;
+    top: 160px;
+}
+
+.line-3-p2 {
+    left: 145px;
+    top: 190px;
+}
+
+.line-4-p2 {
+    left: 160px;
+    top: 220px;
+}
+
+.line-1-p3 {
+    left: 150px;
+    top: 110px;
+}
+
+.line-2-p3 {
+    left: 130px;
+    top: 140px;
+}
+
+.line-1-p6 {
+    left: 140px;
+    top: 150px;
+}
+
+.line-2-p6 {
+    left: 150px;
+    top: 180px;
+}
+
+.line-1-p7 {
+    left: 180px;
+    top: 70px;
+}
+
+.line-2-p7 {
+    left: 160px;
+    top: 100px;
+}
+
+.line-3-p7 {
+    left: 140px;
+    top: 130px;
+}
+
+.line-4-p7 {
+    left: 120px;
+    top: 160px;
+}
+
+.piece-popup-text-container {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0 40px;
+}
+
+.piece-popup-text {
+    color: var(--WHITE-TEXT);
+    font-size: 1.3rem;
+    text-align: center;
+    display: none;
+}
+
+.piece-popup-text.clicked {
+    display: flex;
+}
+
+@media (max-width: 5000px) {
     .roadmap-container {
         width: 650px;
         height: 1900px;
@@ -2348,8 +2495,8 @@ svg.top {
     .roadmap-piece-popup-container.clicked {
         height: 280px;
         width: 450px;
-        outline: 10px solid var(--GOLD);
-        outline-offset: -10px;
+        outline: 8px solid var(--GOLD);
+        outline-offset: -8px;
         transform: translate(0px, 0px);
     }
 

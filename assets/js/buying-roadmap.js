@@ -1,5 +1,6 @@
 const pieceContainers = document.querySelectorAll('.roadmap-piece-container');
 const popupContainers = document.querySelectorAll('.roadmap-piece-popup-container');
+const popupTexts = document.querySelectorAll('.piece-popup-text');
 
 const getImage = (pieceContainer) => {
     return pieceContainer.querySelector('.roadmap-piece-img');
@@ -35,33 +36,40 @@ pieceContainers.forEach((pieceContainer, index) => {
     let borderSrc = getImageBorder(imageSrc);
 
     let popupContainer = popupContainers[index];
+    let popupText = popupTexts[index];
     
     pieceContainer.addEventListener('mouseenter', () => {
         addImageBorder(image, borderSrc);
         window.setTimeout(() => {
-            popupContainer.classList.add('clicked');
-        }, 400);
+            //popupContainer.classList.add('clicked');
+        }, 1000);
     });
 
     pieceContainer.addEventListener('mouseleave', () => {
         if (!pieceContainer.classList.contains('clicked')) {
             resetImage(image, imageSrc);
-            popupContainer.classList.remove('clicked');
+            //popupContainer.classList.remove('clicked');
         } else {
             return;
         }
     });
-
+    
     pieceContainer.addEventListener('click', () => {
         if (!pieceContainer.classList.contains('clicked')) {
-            pieceContainer.classList.add('clicked');
             removeOtherClickedPieces(index);
-            addImageBorder(image, borderSrc);
-            popupContainer.classList.add('clicked');
+            window.setTimeout(() => {
+                pieceContainer.classList.add('clicked');
+                addImageBorder(image, borderSrc);
+                popupContainer.classList.add('clicked');
+                window.setTimeout(() => {
+                    popupText.classList.add('clicked');
+                }, 200);
+            }, 500);
         } else {
             pieceContainer.classList.remove('clicked');
             resetImage(image, imageSrc);
             popupContainer.classList.remove('clicked');
+            popupText.classList.remove('clicked');
         }
     });
 })
@@ -74,7 +82,9 @@ const removeOtherClickedPieces = (index) => {
             let newImageSrc = getImageSrc(newIndex);
             resetImage(newImage, newImageSrc);
             let popupContainer = popupContainers[newIndex];
+            let popupText = popupTexts[newIndex];
             popupContainer.classList.remove('clicked');
+            popupText.classList.remove('clicked');
         }
     })
 }
