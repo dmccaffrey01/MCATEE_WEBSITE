@@ -18,7 +18,8 @@
     --GOLD: #bb993f;
     --GOLD-1: #b17c28;
     --GOLD-2: #bb993f;
-    --BLUE: #323a47;
+    --BLUE: #003e64;
+    --BLUE-TP: #003e6483;
     --GREEN: #006400;
     --DARK-TEXT: #262626;
     --LIGHT-BG: #333333;
@@ -406,6 +407,64 @@ header {
     width: fit-content;
 }
 
+.broker-content-wrapper {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 100px);
+    display: flex;
+    justify-content: flex-end;
+}
+
+.broker-content-container {
+    padding: 15px;
+    width: fit-content;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--BLUE-TP);
+}
+
+.broker-logo-container {
+    width: 90px;
+    height: 90px;
+}
+
+.broker-logo {
+    width: 100%;
+    height: auto;
+}
+
+.broker-info-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.broker-info-heading {
+    color: var(--GOLD);
+    font-size: 1.2rem;
+}
+
+.broker-info-line-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.broker-info-line {
+    color: var(--WHITE-TEXT);
+    font-size: 1rem;
+}
+
 @media (max-width: 1000px) {
 
     .hero-slogan {
@@ -768,6 +827,7 @@ header {
     padding: 10px;
     border-radius: 5px;
     max-width: 160px;
+    display: none;
 }
 
 .testimonial-quote-container {
@@ -785,6 +845,14 @@ header {
     color: var(--WHITE-TEXT);
     font-size: 1.2rem;
     z-index: 4;
+}
+
+.fs-1-1 {
+    font-size: 1.1rem;
+}
+
+.fs-2 {
+    font-size: 2rem;
 }
 
 .quote-overlay {
@@ -823,6 +891,14 @@ header {
     transform: translateX(200%);
 }
 
+.testimonial-card-4 {
+    transform: translateX(300%);
+}
+
+.testimonial-card-5 {
+    transform: translateX(400%);
+}
+
 .swipe-btn {
     font-size: 5rem;
     color: var(--DARK-TEXT);
@@ -841,7 +917,7 @@ header {
 }
 
 .dots-container {
-    width: 250px;
+    width: fit-content;
     height: 40px;
     display: flex;
     align-items: center;
@@ -975,11 +1051,6 @@ footer {
     font-family: "Source-Sans-Pro", sans-serif;
 }
 
-.footer-padding-bottom {
-    width: 100%;
-    padding-bottom: 150px;
-}
-
 .footer-container {
     height: 100px;
     width: calc(100vw - 80px);
@@ -993,6 +1064,9 @@ footer {
 .copyright {
     width: 220px;
     font-size: 0.9rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .privacy-link {
@@ -1006,6 +1080,12 @@ footer {
     align-items: center;
     gap: 30px;
     font-size: 1.5rem;
+}
+
+.footer-socials {
+    width: 220px;
+    justify-content: flex-start;
+    gap: 30px;
 }
 
 @media (max-width: 1000px) {
@@ -1053,6 +1133,11 @@ footer {
         height: fit-content;
     }
 
+    .footer-padding-bottom {
+        width: 100%;
+        padding-bottom: 150px;
+    }
+
 }
 
 /* About Us Section */
@@ -1091,13 +1176,29 @@ footer {
 .about-us-img-container {
     width: 450px;
     height: 450px;
-    border-radius: 5px;
-    overflow: hidden;
+    position: relative;
 }
 
 .about-us-img {
     width: 100%;
     height: auto;
+}
+
+.serving-text-container {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.serving-text {
+    color: var(--WHITE-TEXT);
+    font-size: 1.3rem;
+    text-align: center;
+    width: 200px;
+    margin-left: 20px;
 }
 
 .about-us-content-container {
@@ -1110,6 +1211,17 @@ footer {
     gap: 20px;
     color: var(--WHITE-TEXT);
     font-size: 1.2rem;
+}
+
+.about-us-heading {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.about-us-heading.sub-heading {
+    font-size: 1.5rem;
+    color: var(--GOLD);
 }
 
 @media (max-width: 1000px) {
@@ -1163,7 +1275,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    justify-content: center;
+    am justify-content: center;
 }
 
 .team-container {
@@ -1179,10 +1291,10 @@ footer {
 
 .meet-the-team-heading {
     color: var(--GOLD);
-    font-size: 3rem;
+    font-size: 3.5rem;
+    font-weight: bold;
     text-align: center;
-    text-decoration: underline;
-    margin-bottom: 100px;
+    margin-bottom: 70px;
 }
 
 .team-person-container {
@@ -1195,6 +1307,10 @@ footer {
     padding: 250px 0 180px 0;
     z-index: 2;
     background-color: var(--MAIN-BG);
+}
+
+.team-person-1 {
+    padding: 220px 0 220px 0;
 }
 
 .team-person-container svg {
@@ -1228,7 +1344,7 @@ svg.top {
 
 .team-person-content-container {
     width: 500px;
-    height: 500px;
+    height: fit-content;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1244,6 +1360,7 @@ svg.top {
 .team-person-heading {
     font-size: 2rem;
     color: var(--GOLD);
+    font-weight: bold;
 }
 
 .team-person-text {
@@ -2519,17 +2636,17 @@ svg.top {
     gap: 30px;
     width: 100%;
     max-width: 100%;
-    background-color: var(--LIGHT-GRAY-2);
+    background-color: var(--MAIN-BG);
     padding: 100px 0;
 }
 
 .coaching-intro-container {
     width: 1000px;
-    padding: 100px 0 0 0;
+    padding: 50px 0 0 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--LIGHT-GRAY-2);
+    background-color: var(--MAIN-BG);
 }
 
 .card {
@@ -2794,6 +2911,10 @@ svg.top {
     font-size: 4rem;
     color: var(--WHITE-TEXT);
     text-align: center;
+}
+
+.card:hover .book-call-heading {
+    color: var(--GOLD);
 }
 
 .coaching-contact-section {

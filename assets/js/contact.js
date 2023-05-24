@@ -5,7 +5,7 @@ const emailInput = document.querySelector(".contact-email-input");
 const messageInput = document.querySelector(".contact-message-input");
 
 messageInput.addEventListener("focus", () => {
-	if (messageInput.value == "Drop a message to the McAtee Group...") {
+	if (messageInput.value == "Drop a message to the McAtee Group..." || messageInput.value == "Drop a message to Jenny...") {
 		messageInput.value = "";
 	}
 });
@@ -60,7 +60,7 @@ function sendEmail() {
 function resetForm() {
 	nameInput.value = "";
 	emailInput.value = "";
-	messageInput.value = "Leave a message for Dillon...";
+	messageInput.value = "Drop a message to the McAtee Group...";
 }
 
 /**
