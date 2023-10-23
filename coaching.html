@@ -1,7 +1,19 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+
+    <link rel="stylesheet" type="text/css" href="assets/css/base.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/coaching.css">
+
+    <script src="https://kit.fontawesome.com/5821df7d40.js" crossorigin="anonymous"></script>
+
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QNDEQ0LYH0"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -10,264 +22,65 @@
 
         gtag('config', 'G-QNDEQ0LYH0');
     </script>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Favicon -->
-    <link rel="icon" href="./assets/images/favicon.ico" type="image/x-icon">
-    <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <!-- Email JS -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-    </script>
-    <!-- Calendly link widget -->
-    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 
-    <title>Contact Us</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+
+    <title>McAtee Group</title>
 </head>
 
 <body>
-
     <!-- Header Logo, Nav Bar and Social Links -->
-    <header>
-        <div class="header-container">
-            <!-- Logo -->
-            <div class="logo-container">
-                <a href="index.html" class="logo">
-                    <div class="logo-img-container">
-                        <img src="./assets/images/mcatee-group-logo-without-text.png" alt="McAtee Logo"
-                            class="logo-img">
-                    </div>
-                </a>
-            </div>
-            <!-- Nav Bar -->
-            <!-- Nav Bar -->
-            <nav class="nav-bar">
-                <ul class="nav-menu">
-                    <li class="nav-item">
-                        <a href="about.html" class="nav-link">About</a>
-                    </li>
-                    <li class="nav-item nav-dropdown-btn">
-                        <a href="#" class="nav-link nav-dropdown-link">Buy / Sell <i
-                                class="fa-solid fa-chevron-down nav-dropdown-icon"></i></a>
-                        <div class="nav-dropdown-container">
-                            <ul class="nav-dropdown">
-                                <li class="nav-item"><a href="buy.html" class="nav-link">Buy</a></li>
-                                <li class="nav-item"><a href="sell.html" class="nav-link">Sell</a></li>
-                            </ul>
-                        </div>
-                    </li>
-
-                    <li class="nav-item">
-                        <a href="coaching.html" class="nav-link">Coaching</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="contact.html" class="nav-link">Contact</a>
-                    </li>
-                </ul>
-                <div class="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
+    <header class="container-col">
+        <div class="header-container container-row space-between">
+            <a href="index.html" class="logo-container container-row">
+                <div class="logo-img-container img-container">
+                    <img src="assets/images/mcatee-logo.png" alt="McAtee Logo" class="img-100a">
                 </div>
-            </nav>
-            <!-- Social Links -->
-            <div class="socials-container">
-                <a target="_blank" href="https://www.instagram.com/mcateegroupmedia/" class="social-link">
-                    <i class="fa-brands fa-instagram" aria-hidden="true"></i>
-                </a>
-                <a target="_blank" href="https://www.facebook.com/profile.php?id=100089872035882" class="social-link">
-                    <i class="fa-brands fa-square-facebook" aria-hidden="true"></i>
-                </a>
+
+                <div class="logo-text-container container-col align-start">
+                    <h1 class="logo-text white-text">MCATEE GROUP</h1>
+                    <h2 class="logo-text white-text">of Taylor Properties</h2>
+                </div>
+            </a>
+
+            <div class="nav-btn container-col">
+                <div class="nav-btn-bar b1"></div>
+                <div class="nav-btn-bar b2"></div>
+                <div class="nav-btn-bar b3"></div>
+            </div>
+
+            <div class="nav-menu-container">
+                <nav class="nav-menu container-col align-start">
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="coaching.html" class="nav-link">Coaching</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </nav>
             </div>
         </div>
     </header>
 
-    <div class="notification">
-        <div class="notification-container">
-            <div class="notification-message"></div>
-            <div class="notification-btn btn"></div>
-        </div>
-    </div>
-
-    <section class="coaching-intro-section">
-        <div class="coaching-intro-container">
-            <div class="card">
-                <div class="card__face card__face--front">
-                    <div class="coaching-intro-card-img-container">
-                        <img src="./assets/images/meet-the-team-jenny-mcatee.jpeg" alt="Jenny Mc Atee Image"
-                            class="coaching-intro-card-img">
-                        <div class="quote-overlay"></div>
-                    </div>
-                    <div class="coaching-intro-card-img-text-container">
-                        <div class="coaching-intro-card-img-text heading">
-                            Are you ready to discover the secrets of successful real estate career with a seasoned
-                            expert?
-                        </div>
-                        <div class="coaching-intro-card-img-text subheading">
-                            Join Jenny Mc Atee as she shares her insider knowledge and proven strategies for building
-                            wealth through real estate
-                        </div>
-                        <!--
-                        <div class="coaching-intro-card-img-text flip-card-prompt">
-                            Click or Tap the card to read more...
-                        </div>
-                        -->
-                        <div class="book-call-container">
-                            <div class="book-call-heading">Book a Free 15 Minute Call Now!</div>
-                            <!--<a href="" class="btn"
-                                onclick="Calendly.initPopupWidget({url: 'https://calendly.com/jennymcatee/15-min-conversation?background_color=262626&text_color=ffffff&primary_color=b17c28'});return false;">Book
-                                Call</a>-->
-                            <a href="https://calendly.com/jennymcatee/15-min-conversation?background_color=262626&text_color=ffffff&primary_color=b17c28'"
-                                class="btn" target="_blank">Book
-                                Call</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card__face card__face--back">
-                    <div class="coaching-intro-text-container">
-                        <div class="coaching-intro-text">
-                            Meet Jenny Mc Atee, a highly experienced real estate coach with over a decade of
-                            experience
-                            in
-                            the
-                            industry. She has a
-                            passion for helping others achieve their dreams and is known for her personalized
-                            approach
-                            to
-                            coaching. Jenny began her
-                            career as a licensed real estate agent, quickly rising to the top of her field through
-                            hard
-                            work
-                            and
-                            dedication. As she
-                            gained more experience and expertise, she realized that her true calling was in coaching
-                            and
-                            mentoring others. Today,
-                            Jenny is a sought-after real estate coach, known for her commitment to helping her
-                            clients
-                            succeed.
-                            Her customized
-                            approach ensures that each client receives the individual attention and guidance they
-                            need
-                            to
-                            achieve their goals.
-                            Whether you're just starting out in the industry or looking to take your career to the
-                            next
-                            level,
-                            Jenny has the
-                            knowledge, experience, and passion to help you succeed in real estate. Contact her today
-                            to
-                            learn
-                            more about her
-                            coaching services and how she can help you achieve your goals.
-                        </div>
-                        <div class="coaching-intro-btn-container">
-                            <div class="btn contact-btn">Let's Talk</div>
-                        </div>
-                    </div>
-
-                </div>
+    <section class="coaching-hero-section section">
+        <div class="section-container container-row space-between">
+            <div class="img-container box-shadow">
+                <img src="assets/images/jenny.jpeg" alt="Jenny" class="img-100a">
             </div>
 
+            <div class="main-text-container container-col align-start">
+                <p class="white-text">Get coaching from a seasoned expert?</p>
 
-        </div>
+                <h2 class="heading white-text">Jenny McAtee shares her insider knowledge and proven strategies for
+                    building wealth through real estate</h2>
 
-    </section>
-
-    <!--
-    <section class="coaching-video-section">
-        <div class="coaching-video-section-container">
-            <div class="coaching-video-container">
-                <iframe src="https://www.youtube.com/embed/zpdOGUIw9dA" title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>
+                <div class="btns-container container-row">
+                    <a href="contact.html" class="btn-1 btn">Contact</a>
+                    <a href="#" class="btn-2 btn">Book a call</a>
+                </div>
             </div>
-        </div>
-        <div class="book-call-container">
-            <div class="book-call-heading">Book a Free 15 Minute Call Now!</div>
-            <a href="" class="btn"
-                onclick="Calendly.initPopupWidget({url: 'https://calendly.com/jennymcatee/15-min-conversation?background_color=262626&text_color=ffffff&primary_color=b17c28'});return false;">Book
-                Call</a>
-        </div>
-    </section>
-    -->
-
-    <section class="contact-heading-section coaching-contact-section">
-        <div class="contact-heading">Alternatively Get In Contact</div>
-    </section>
-
-    <section class="contact-form-section contact-dark-seciton">
-        <div class="contact-form-container">
-            <form class="contact-form">
-                <div class="input-container input-container-1">
-                    <div class="label-container">
-                        <label for="name" class="form-label">Name</label>
-                        <input type="text" class="form-input contact-name-input" name="name" id="name">
-                    </div>
-                    <div class="label-container">
-                        <label for="email" class="form-label">Email</label>
-                        <input type="text" class="form-input contact-email-input" name="email" id="email">
-                    </div>
-                </div>
-                <div class="input-container input-container-2">
-                    <div class="label-container">
-                        <label for="message" class="form-label">Message</label>
-                        <textarea name="message" id="message" rows="5"
-                            class="form-input contact-message-input">Drop a message to Jenny...</textarea>
-                    </div>
-                </div>
-                <div class="input-container-3">
-                    <input type="submit" class="send-email-btn" value="Send">
-                </div>
-            </form>
         </div>
     </section>
 
-    <div class="footer-padding-bottom"></div>
-
-    <!-- Footer -->
-    <footer>
-        <div class="footer-container">
-            <!-- Copyright -->
-            <div class="copyright">
-                © Copyright 2023
-                McAtee Group
-            </div>
-            <!-- Privacy -->
-            <!--
-            <div class="privacy">
-                <a href="#" class="privacy-link">
-                    Privacy
-                </a>
-            </div>
-            -->
-            <!-- Nav Links -->
-            <div class="footer-nav-container">
-                <a href="about.html" class="nav-link">About</a>
-                <a href="contact.html" class="nav-link">Contact</a>
-            </div>
-            <!-- Social Links -->
-            <div class="socials-container footer-socials">
-                <a target="_blank" href="https://www.instagram.com/mcateegroupmedia/" class="social-link">
-                    <i class="fa-brands fa-instagram" aria-hidden="true"></i>
-                </a>
-                <a target="_blank" href="https://www.facebook.com/profile.php?id=100089872035882" class="social-link">
-                    <i class="fa-brands fa-square-facebook" aria-hidden="true"></i>
-                </a>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Font Awesome link -->
-    <script src="https://kit.fontawesome.com/5821df7d40.js" crossorigin="anonymous"></script>
-
-    <script src="./assets/js/nav-menu.js"></script>
-    <script src="./assets/js/contact.js"></script>
-    <script src="./assets/js/btns.js"></script>
-    <!-- <script src="./assets/js/card-flip.js"></script> -->
-
+    <script src="assets/js/base.js"></script>
 </body>
 
 </html>

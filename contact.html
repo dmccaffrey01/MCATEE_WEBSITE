@@ -1,7 +1,19 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+
+    <link rel="stylesheet" type="text/css" href="assets/css/base.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/contact.css">
+
+    <script src="https://kit.fontawesome.com/5821df7d40.js" crossorigin="anonymous"></script>
+
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QNDEQ0LYH0"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -10,273 +22,106 @@
 
         gtag('config', 'G-QNDEQ0LYH0');
     </script>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Favicon -->
-    <link rel="icon" href="./assets/images/favicon.ico" type="image/x-icon">
-    <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <!-- Email JS -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-    </script>
 
-    <title>Contact Us</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+
+    <title>McAtee Group</title>
 </head>
 
 <body>
-
     <!-- Header Logo, Nav Bar and Social Links -->
-    <header>
-        <div class="header-container">
-            <!-- Logo -->
-            <div class="logo-container">
-                <a href="index.html" class="logo">
-                    <div class="logo-img-container">
-                        <img src="./assets/images/mcatee-group-logo-without-text.png" alt="McAtee Logo"
-                            class="logo-img">
-                    </div>
-                </a>
-            </div>
-            <!-- Nav Bar -->
-            <!-- Nav Bar -->
-            <nav class="nav-bar">
-                <ul class="nav-menu">
-                    <li class="nav-item">
-                        <a href="about.html" class="nav-link">About</a>
-                    </li>
-                    <li class="nav-item nav-dropdown-btn">
-                        <a href="#" class="nav-link nav-dropdown-link">Buy / Sell <i
-                                class="fa-solid fa-chevron-down nav-dropdown-icon"></i></a>
-                        <div class="nav-dropdown-container">
-                            <ul class="nav-dropdown">
-                                <li class="nav-item"><a href="buy.html" class="nav-link">Buy</a></li>
-                                <li class="nav-item"><a href="sell.html" class="nav-link">Sell</a></li>
-                            </ul>
-                        </div>
-                    </li>
-
-                    <li class="nav-item">
-                        <a href="coaching.html" class="nav-link">Coaching</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="contact.html" class="nav-link">Contact</a>
-                    </li>
-                </ul>
-                <div class="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
+    <header class="container-col">
+        <div class="header-container container-row space-between">
+            <a href="index.html" class="logo-container container-row">
+                <div class="logo-img-container img-container">
+                    <img src="assets/images/mcatee-logo.png" alt="McAtee Logo" class="img-100a">
                 </div>
-            </nav>
-            <!-- Social Links -->
-            <div class="socials-container">
-                <a target="_blank" href="https://www.instagram.com/mcateegroupmedia/" class="social-link">
-                    <i class="fa-brands fa-instagram" aria-hidden="true"></i>
-                </a>
-                <a target="_blank" href="https://www.facebook.com/profile.php?id=100089872035882" class="social-link">
-                    <i class="fa-brands fa-square-facebook" aria-hidden="true"></i>
-                </a>
+
+                <div class="logo-text-container container-col align-start">
+                    <h1 class="logo-text white-text">MCATEE GROUP</h1>
+                    <h2 class="logo-text white-text">of Taylor Properties</h2>
+                </div>
+            </a>
+
+            <div class="nav-btn container-col">
+                <div class="nav-btn-bar b1"></div>
+                <div class="nav-btn-bar b2"></div>
+                <div class="nav-btn-bar b3"></div>
+            </div>
+
+            <div class="nav-menu-container">
+                <nav class="nav-menu container-col align-start">
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="coaching.html" class="nav-link">Coaching</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </nav>
             </div>
         </div>
     </header>
 
-    <div class="notification">
-        <div class="notification-container">
-            <div class="notification-message"></div>
-            <div class="notification-btn btn"></div>
-        </div>
-    </div>
+    <section class="contact-section section">
+        <div class="section-container container-row space-between">
+            <div class="contact-info-container container-col align-start">
+                <h2 class="heading white-text">Get in Contact With Us</h2>
 
-    <section class="contact-heading-section">
-        <div class="contact-heading">Contact Us</div>
-    </section>
-
-    <section class="contact-form-section contact-dark-section">
-        <div class="contact-form-container">
-            <div class="contact-details-heading">Message Us</div>
-            <form class="contact-form">
-                <div class="input-container input-container-1">
-                    <div class="label-container">
-                        <label for="name" class="form-label">Name</label>
-                        <input type="text" class="form-input contact-name-input" name="name" id="name">
+                <div class="main-info-container container-col align-start">
+                    <div class="line-container container-col">
+                        <div class="dot"></div>
+                        <div class="line"></div>
+                        <div class="dot"></div>
+                        <div class="line"></div>
+                        <div class="dot"></div>
                     </div>
-                    <div class="label-container">
-                        <label for="email" class="form-label">Email</label>
-                        <input type="text" class="form-input contact-email-input" name="email" id="email">
+                    <div class="info-group container-col align-start justify-start">
+                        <p class="gold-text white-text">Phone Number</p>
+                        <p class="white-text">McAtee Group (240) 595-2680</p>
+                        <p class="white-text">Broker Office (800) 913-4326</p>
                     </div>
-                </div>
-                <div class="input-container input-container-2">
-                    <div class="label-container">
-                        <label for="message" class="form-label">Message</label>
-                        <textarea name="message" id="message" rows="5"
-                            class="form-input contact-message-input">Drop a message to the McAtee Group...</textarea>
+                    <div class="info-group container-col align-start justify-start">
+                        <p class="gold-text white-text">Email Address</p>
+                        <p class="white-text">info@mcateegroup.com</p>
                     </div>
-                </div>
-                <div class="input-container-3">
-                    <input type="submit" class="send-email-btn" value="Send">
-                </div>
-            </form>
-        </div>
-    </section>
-
-    <section class="contact-details-section">
-        <div class="contact-details-section-container">
-            <div class="contact-details-heading">Get In Touch</div>
-            <div class="contact-details-container">
-                <div class="contact-details-col">
-                    <div class="contact-details-icon-container">
-                        <img src="./assets/images/destination-icon.png" alt="Destination Icon"
-                            class="contact-details-icon">
+                    <div class="info-group container-col align-start justify-start">
+                        <p class="gold-text white-text">Address</p>
+                        <p class="white-text">Taylor Properties,</p>
+                        <p class="white-text">175 Admiral Coachrane Drive, #112</p>
+                        <p class="white-text">Annopolis, MD 21401</p>
                     </div>
-                    <div class="contact-details-col-heading">Address</div>
-                    <div class="contact-details-info-container">
-                        <div class="contact-details-info-heading">McAtee Group</div>
-                        <div class="contact-details-info-text">
-                            <a href="#" class="copy-link" data-copy-text="McAtee Group of Taylor Properties,
-                            175 Admiral Cochrane Drive, #112, Annapolis, MD 21401">
-                                <div class="address-line">Taylor Properties,</div>
-                                <div class="address-line">175 Admiral Cochrane Drive, #112,</div>
-                                <div class="address-line">Annapolis, MD 21401</div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="contact-details-col">
-                    <div class="contact-details-icon-container">
-                        <img src="./assets/images/phone-icon.png" alt="Destination Icon" class="contact-details-icon">
-                    </div>
-                    <div class="contact-details-col-heading">Phone</div>
-                    <div class="contact-details-info-container">
-                        <div class="contact-details-info-heading">McAtee Group Number</div>
-                        <div class="contact-details-info-text">
-                            <a href="#" class="copy-link" data-copy-text="(240) 595-2680">(240) 595-2680</a>
-                        </div>
-                    </div>
-                    <div class="contact-details-info-container">
-                        <div class="contact-details-info-heading">Broker Office Number</div>
-                        <div class="contact-details-info-text">
-                            <a href="#" class="copy-link" data-copy-text="800-9134326">(800) 913-4326</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="contact-details-col">
-                    <div class="contact-details-icon-container">
-                        <img src="./assets/images/email-icon.png" alt="Destination Icon" class="contact-details-icon">
-                    </div>
-                    <div class="contact-details-col-heading">Email</div>
-                    <div class="contact-details-info-container">
-                        <div class="contact-details-info-heading">McAtee Group Email</div>
-                        <div class="contact-details-info-text">
-                            <a href="#" class="copy-link" data-copy-text="INFO@mcateegroup.com">info@mcateegroup.com</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="google-maps-section">
-        <div class="google-maps-section-container">
-            <div class="google-maps-container">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.7829327787776!2d-76.55245172362616!3d38.9746242421432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7f6c5570a20c3%3A0x6365e0bf6e65a1d5!2sTaylor%20Properties!5e0!3m2!1sen!2sie!4v1682958047470!5m2!1sen!2sie"
-                    width="1000" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <div class="btn google-maps-btn">Get Directions</div>
-            </div>
-        </div>
-    </section>
-    <!--
-    <section class="maps-info-section contact-dark-section">
-        <div class="contact-details-container">
-            <div class="contact-details">
-                <div class="contact-details-text-container">
-                    <div class="contact-details-text">Email: <a href="#" class="copy-link"
-                            data-copy-text="INFO@mcateegroup.com">info@mcateegroup.com</a></div>
-                    <div class="contact-details-text">
-                        Address:
-                        <a href="#" class="copy-link" data-copy-text="McAtee Group of Taylor Properties,
-                        175 Admiral Cochrane Drive, #112, Annapolis, MD 21401">
-                            McAtee Group of Taylor Properties,
-                            175 Admiral Cochrane Drive, #112, Annapolis, MD 21401
+                    <div class="social-container container-row">
+                        <a target="_blank"
+                            href="https://www.facebook.com/McAteeGroup/?show_switched_toast=0&show_invite_to_follow=0&show_switched_tooltip=0&show_podcast_settings=0&show_community_review_changes=0&show_community_rollback=0&show_follower_visibility_disclosure=0"
+                            class="fa-icon">
+                            <i class="fa-brands fa-facebook white-text"></i>
+                        </a>
+                        <a target="_blank" href="https://www.instagram.com/mcateegroupmedia/" class="fa-icon">
+                            <i class="fa-brands fa-instagram white-text"></i>
                         </a>
                     </div>
                 </div>
-                <div class="contact-details-text-container contact-details-text-container-2">
-                    <div class="align-right-container">
-                        <div class="contact-details-text line-3">McAtee Group Number: <a href="#" class="copy-link"
-                                data-copy-text="(240) 595-2680">(240) 595-2680</a></div>
-                        <div class="contact-details-text line-4">Broker Office Number: <a href="#" class="copy-link"
-                                data-copy-text="800-9134326">(800) 913-4326</a></div>
-                    </div>
-                </div>
             </div>
-            <div class="google-maps-container">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.7829327787776!2d-76.55245172362616!3d38.9746242421432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7f6c5570a20c3%3A0x6365e0bf6e65a1d5!2sTaylor%20Properties!5e0!3m2!1sen!2sie!4v1682958047470!5m2!1sen!2sie"
-                    width="1000" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <div class="btn google-maps-btn">Get Directions</div>
+
+            <div class="contact-form-container container-col align-start">
+                <form class="container-col align-start">
+                    <fieldset class="container-col align-start">
+                        <label class="white-text" for="name">Your Name</label>
+                        <input type="text" class="input" id="name" name="name" placeholder="Enter your name">
+                    </fieldset>
+                    <fieldset class="container-col align-start">
+                        <label class="white-text" for="email">Your Email</label>
+                        <input type="text" class="input" id="email" name="email" placeholder="Enter your email">
+                    </fieldset>
+                    <fieldset class="container-col align-start">
+                        <label class="white-text" for="message">Your Message</label>
+                        <input type="text" class="input" id="message" name="email" placeholder="Enter your message">
+                    </fieldset>
+                    <button class="btn-1 btn input-btn" type="submit">Send Message</button>
+                </form>
             </div>
         </div>
     </section>
-    -->
-    <section class="social-media-links-section">
-        <div class="social-media-links-container">
-            <a target="_blank" href="https://www.instagram.com/mcateegroupmedia/" class="social-icon-container">
-                <i class="fa-brands fa-instagram" aria-hidden="true"></i>
-            </a>
-            <a target="_blank" href="https://www.facebook.com/profile.php?id=100089872035882"
-                class="social-icon-container">
-                <i class="fa-brands fa-facebook" aria-hidden="true"></i>
-            </a>
-        </div>
-        <div class="social-media-links-heading">Follow Us on Social Media</div>
-    </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="footer-container">
-            <!-- Copyright -->
-            <div class="copyright">
-                © Copyright 2023
-                McAtee Group
-            </div>
-            <!-- Privacy -->
-            <!--
-            <div class="privacy">
-                <a href="#" class="privacy-link">
-                    Privacy
-                </a>
-            </div>
-            -->
-            <!-- Nav Links -->
-            <div class="footer-nav-container">
-                <a href="about.html" class="nav-link">About</a>
-                <a href="contact.html" class="nav-link">Contact</a>
-            </div>
-            <!-- Social Links -->
-            <div class="socials-container footer-socials">
-                <a target="_blank" href="https://www.instagram.com/mcateegroupmedia/" class="social-link">
-                    <i class="fa-brands fa-instagram" aria-hidden="true"></i>
-                </a>
-                <a target="_blank" href="https://www.facebook.com/profile.php?id=100089872035882" class="social-link">
-                    <i class="fa-brands fa-square-facebook" aria-hidden="true"></i>
-                </a>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Font Awesome link -->
-    <script src="https://kit.fontawesome.com/5821df7d40.js" crossorigin="anonymous"></script>
-
-    <script src="./assets/js/nav-menu.js"></script>
-    <script src="./assets/js/copy-to-clipboard.js"></script>
-    <script src="./assets/js/contact.js"></script>
-    <script src="./assets/js/btns.js"></script>
-    <script src="./assets/js/google-maps.js"></script>
-
+    <script src="assets/js/base.js"></script>
 </body>
 
 </html>

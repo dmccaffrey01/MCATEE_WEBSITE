@@ -1,0 +1,19 @@
+/* About */
+.coaching-hero-section {
+  background: rgb(15, 15, 15);
+  background: linear-gradient(270deg, rgb(15, 15, 15) 20%, rgb(83, 83, 83) 73%);
+  height: 100vh;
+}
+.coaching-hero-section .img-container {
+  width: 500px;
+  height: 500px;
+}
+.coaching-hero-section .main-text-container {
+  width: 700px;
+  gap: 30px;
+}
+.coaching-hero-section .btns-container {
+  gap: 20px;
+}
+
+/*# sourceMappingURL=coaching.css.map */
