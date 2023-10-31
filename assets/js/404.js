@@ -5,8 +5,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let lastPathname = splitPathname[splitPathname.length - 1];
 
-    console.log(lastPathname);
-
     if (lastPathname == "zoom") {
         currentUrl = "https://us02web.zoom.us/j/4146842904";
     } else {
