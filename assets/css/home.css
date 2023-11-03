@@ -77,13 +77,13 @@ a:visited {
 
 .heading {
   font-size: 3rem;
-  font-weight: 600;
+  font-weight: 400;
   font-family: "Playfair Display", sans-serif;
 }
 
 .subheading {
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: 400;
   font-family: "Playfair Display", sans-serif;
   position: relative;
   margin-bottom: 10px;
@@ -386,6 +386,11 @@ h2.logo-text {
   gap: 50px;
   width: 50%;
   padding: 100px;
+}
+
+.home-hero-section .sub-heading {
+  font-size: 1.8rem;
+  font-weight: 400;
 }
 
 .home-hero-section .btns-container {

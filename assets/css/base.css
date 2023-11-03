@@ -77,13 +77,13 @@ a:visited {
 
 .heading {
   font-size: 3rem;
-  font-weight: 600;
+  font-weight: 400;
   font-family: "Playfair Display", sans-serif;
 }
 
 .subheading {
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: 400;
   font-family: "Playfair Display", sans-serif;
   position: relative;
   margin-bottom: 10px;
