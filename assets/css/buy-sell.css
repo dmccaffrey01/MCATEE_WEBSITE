@@ -468,25 +468,28 @@ h2.logo-text {
 .buy-roadmap-section {
   background: rgb(83, 83, 83);
   background: linear-gradient(270deg, rgb(83, 83, 83) 20%, rgb(15, 15, 15) 73%);
+  overflow: hidden;
 }
 
 .buy-roadmap-section .section-container {
-  gap: 80px;
+  gap: 100px;
 }
 
 .buy-roadmap-section .cards-container {
   width: 100%;
   flex-wrap: wrap;
-  gap: 175px;
+  gap: 100px;
+  position: relative;
+  transition: all 1s ease;
 }
 
-.buy-roadmap-section .cards-container.hidden .card {
-  transform: translate(100%);
+.buy-roadmap-section .cards-container.hidden {
+  transform: translateX(100%);
   opacity: 0;
 }
 
-.buy-roadmap-section .cards-container.show .card {
-  transform: translate(0);
+.buy-roadmap-section .cards-container.show {
+  transform: translateX(0);
   opacity: 1;
 }
 
@@ -499,7 +502,7 @@ h2.logo-text {
 }
 
 .buy-roadmap-section .card.flip {
-  transform: rotateY(0.5turn);
+  transform: rotateY(0.5turn) translateX(0);
 }
 
 .buy-roadmap-section .front-card {
@@ -549,6 +552,47 @@ h2.logo-text {
   padding: 30px;
   border-radius: 5px;
   border: 2px solid #af8c53;
+}
+
+/* Selling Roadmap */
+
+.sell-roadmap-section .card {
+  padding-top: 20px;
+  height: 500px;
+  width: 400px;
+  cursor: default;
+}
+
+.sell-roadmap-section .card .text-container {
+  gap: 30px;
+  padding-left: 10px;
+}
+
+.sell-roadmap-section .card .container-heading {
+  font-size: 1.8rem;
+}
+
+.sell-roadmap-section .card .list-container {
+  gap: 10px;
+}
+
+.sell-roadmap-section .card .list-heading {
+  margin-bottom: 15px;
+}
+
+.sell-roadmap-section .card .list-item {
+  position: relative;
+}
+
+.sell-roadmap-section .card .list-item::after {
+  position: absolute;
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  left: -13px;
+  top: 0.5rem;
+  background-color: #ffffff;
 }
 
 /*# sourceMappingURL=buy.css.map */
