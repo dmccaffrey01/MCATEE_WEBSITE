@@ -26,6 +26,8 @@
         gtag('config', 'G-QNDEQ0LYH0');
     </script>
 
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
 
@@ -38,7 +40,7 @@
         <div class="header-container container-row space-between">
             <a href="index.html" class="logo-container container-row">
                 <div class="logo-img-container img-container">
-                    <img src="assets/images/mcatee-logo.webp" alt="McAtee Logo" class="img-100a">
+                    <img src="assets/images/mcatee-group-logo.webp" alt="McAtee Group Logo" class="img-100a">
                 </div>
 
                 <div class="logo-text-container container-col align-start">
@@ -118,15 +120,20 @@
                     </fieldset>
                     <fieldset class="container-col align-start">
                         <label class="white-text" for="message">Your Message</label>
-                        <input type="text" class="input" id="message" name="email" placeholder="Enter your message">
+                        <input type="text" class="input" id="message" name="message" placeholder="Enter your message">
                     </fieldset>
                     <button class="btn-1 btn input-btn" type="submit">Send Message</button>
                 </form>
+                <div class="notification-container white-text">
+                    <span class="fa-icon"><i class="fa-solid fa-circle-info"></i></span> <span
+                        class="notification-text"></span>
+                </div>
             </div>
         </div>
     </section>
 
     <script src="assets/js/base.js"></script>
+    <script src="assets/js/contact.js"></script>
 </body>
 
 </html>

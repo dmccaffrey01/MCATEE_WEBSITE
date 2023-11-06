@@ -175,6 +175,7 @@ header {
 
 h1.logo-text {
   font-size: 2rem;
+  text-transform: uppercase;
 }
 
 h2.logo-text {

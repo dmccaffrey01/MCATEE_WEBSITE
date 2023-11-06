@@ -175,6 +175,7 @@ header {
 
 h1.logo-text {
   font-size: 2rem;
+  text-transform: uppercase;
 }
 
 h2.logo-text {
@@ -404,6 +405,34 @@ h2.logo-text {
   background-image: url('../images/real-estate-home.webp');
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
+}
+
+.home-hero-section .taylor-prop-container {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: #004c7b9f;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 400px;
+  height: 120px;
+}
+
+.home-hero-section .taylor-prop-container .white-text {
+  font-size: 1.1rem;
+}
+
+.home-hero-section .taylor-prop-container .text-container {
+  width: 280px;
+  padding: 10px;
+  gap: 10px;
+}
+
+.home-hero-section .taylor-prop-container .img-container {
+  background: none;
+  width: 120px;
+  height: 120px;
 }
 
 @media (max-width: 1500px) {
