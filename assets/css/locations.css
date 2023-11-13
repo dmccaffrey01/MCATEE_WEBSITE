@@ -446,238 +446,25 @@ footer .left-container .img-container {
 
 /*# sourceMappingURL=base.css.map */
 
-/* Buy Hero Section */
-.buy-hero-section {
-  height: 100vh;
-  background: rgb(83, 83, 83);
-  background: linear-gradient(270deg, rgb(83, 83, 83) 20%, rgb(15, 15, 15) 73%);
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Playfair+Display&display=swap");
+
+.locations-section {
+  background: rgb(15, 15, 15);
+  background: linear-gradient(90deg, rgb(15, 15, 15) 20%, rgb(83, 83, 83) 73%);
+  padding-top: 150px;
 }
 
-.buy-hero-section .main-text-container {
-  width: 700px;
+.locations-section .section-container {
   gap: 50px;
 }
 
-.buy-hero-section .text-container {
-  gap: 20px;
-}
-
-.buy-hero-section .btns-container {
-  gap: 20px;
-}
-
-.buy-hero-section .img-container {
-  width: 500px;
-  height: 500px;
-  border-radius: 5px;
-}
-
-/* Values Section */
-.buy-values-section {
-  background: rgb(83, 83, 83);
-  background: linear-gradient(270deg, rgb(83, 83, 83) 20%, rgb(15, 15, 15) 73%);
-  overflow: hidden;
-}
-
-.buy-values-section .section-container {
-  gap: 80px;
-}
-
-.buy-values-section .text-container {
-  gap: 20px;
-  transition: all 1s ease;
-}
-
-.buy-values-section .text-container-1 {
-  width: 675px;
-  align-self: flex-start;
-}
-
-.buy-values-section .text-container-2 {
-  width: 675px;
-  align-self: flex-start;
-  transition-delay: 0.3s;
-}
-
-.buy-values-section .section-container.hidden .text-container {
-  transform: translateX(-100%);
-  opacity: 0;
-}
-
-.buy-values-section .section-container.show .text-container {
-  transform: translateX(0);
-  opacity: 1;
-}
-
-.buy-values-section .heading-container {
-  gap: 20px;
-}
-
-.buy-values-section .icon-container {
-  width: 50px;
-  height: 50px;
-}
-
-.buy-values-section .text-container-3 {
-  width: 1000px;
-  position: relative;
-  margin-top: 50px;
+.locations-section .main-text-container {
   gap: 30px;
-  align-self: flex-start;
-  transition-delay: 0.6s;
+  width: 650px;
 }
 
-.buy-values-section .line {
-  position: absolute;
-  width: 300px;
-  height: 3px;
-  background-color: #af8c53;
-}
-
-.buy-values-section .line.line-1 {
-  left: 0;
-  top: -30px;
-}
-
-.buy-values-section .line.line-2 {
-  bottom: calc(10px + 0.75rem);
-  right: 0;
-}
-
-.buy-values-section .btns-container {
+.locations-section .text-container {
   gap: 20px;
 }
 
-/* Buying Roadmap */
-
-.buy-roadmap-section {
-  background: rgb(83, 83, 83);
-  background: linear-gradient(270deg, rgb(83, 83, 83) 20%, rgb(15, 15, 15) 73%);
-  overflow: hidden;
-}
-
-.buy-roadmap-section .section-container {
-  gap: 100px;
-}
-
-.buy-roadmap-section .cards-container {
-  width: 100%;
-  flex-wrap: wrap;
-  gap: 100px;
-  position: relative;
-  transition: all 1s ease;
-}
-
-.buy-roadmap-section .cards-container.hidden {
-  transform: translateX(100%);
-  opacity: 0;
-}
-
-.buy-roadmap-section .cards-container.show {
-  transform: translateX(0);
-  opacity: 1;
-}
-
-.buy-roadmap-section .card {
-  width: 350px;
-  height: 400px;
-  position: relative;
-  transition: all 1s ease;
-  transform-style: preserve-3d;
-}
-
-.buy-roadmap-section .card.flip {
-  transform: rotateY(0.5turn) translateX(0);
-}
-
-.buy-roadmap-section .front-card {
-  gap: 30px;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  backface-visibility: hidden;
-  transition: all 1s ease;
-  position: absolute;
-
-  background-color: #000000;
-  cursor: pointer;
-  padding: 30px;
-  border-radius: 5px;
-  border: 2px solid #af8c53;
-}
-
-.buy-roadmap-section .heading-container {
-  width: 100%;
-}
-
-.buy-roadmap-section .text-container {
-  width: 100%;
-  align-items: flex-start;
-}
-
-.buy-roadmap-section .heading-container .icon-container {
-  width: 70px;
-  height: 70px;
-}
-
-.buy-roadmap-section .back-card {
-  gap: 30px;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  backface-visibility: hidden;
-  transition: all 1s ease;
-  transform: rotateY(0.5turn);
-
-  background-color: #000000;
-  cursor: pointer;
-  padding: 30px;
-  border-radius: 5px;
-  border: 2px solid #af8c53;
-}
-
-/* Selling Roadmap */
-
-.sell-roadmap-section .card {
-  padding-top: 20px;
-  height: 500px;
-  width: 400px;
-  cursor: default;
-}
-
-.sell-roadmap-section .card .text-container {
-  gap: 30px;
-  padding-left: 10px;
-}
-
-.sell-roadmap-section .card .container-heading {
-  font-size: 1.8rem;
-}
-
-.sell-roadmap-section .card .list-container {
-  gap: 10px;
-}
-
-.sell-roadmap-section .card .list-heading {
-  margin-bottom: 15px;
-}
-
-.sell-roadmap-section .card .list-item {
-  position: relative;
-}
-
-.sell-roadmap-section .card .list-item::after {
-  position: absolute;
-  content: "";
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  left: -13px;
-  top: 0.5rem;
-  background-color: #ffffff;
-}
-
-/*# sourceMappingURL=buy.css.map */
+/*# sourceMappingURL=contact.css.map */
