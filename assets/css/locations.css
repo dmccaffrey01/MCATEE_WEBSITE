@@ -467,4 +467,20 @@ footer .left-container .img-container {
   gap: 20px;
 }
 
+@media (max-width: 768px) {
+
+  .locations-section .text-container {
+    align-items: center;
+  }
+
+  .locations-section .main-text-container {
+    width: 280px;
+  }
+
+  .locations-section .section-container {
+    align-items: center;
+    text-align: center;
+  }
+}
+
 /*# sourceMappingURL=contact.css.map */

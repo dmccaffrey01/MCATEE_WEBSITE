@@ -457,10 +457,29 @@ footer .left-container .img-container {
 .policy-text-section .section-container {
   align-items: flex-start;
   gap: 20px;
+  padding-right: 600px;
 }
 
 .policy-text-section h2 {
   font-size: 2rem;
+}
+
+@media (max-width: 1500px) {
+  .policy-text-section .section-container {
+    padding-right: 400px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .policy-text-section .section-container {
+    padding-right: 200px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .policy-text-section .section-container {
+    padding-right: 0px;
+  }
 }
 
 /*# sourceMappingURL=contact.css.map */

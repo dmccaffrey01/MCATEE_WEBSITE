@@ -680,4 +680,114 @@ footer .left-container .img-container {
   background-color: #ffffff;
 }
 
+@media (max-width: 1500px) {
+  .buy-hero-section .main-text-container {
+    width: 500px;
+  }
+
+  .buy-hero-section .img-container {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .buy-hero-section .section-container {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .buy-hero-section {
+    padding-top: 150px;
+    height: fit-content;
+  }
+
+  .buy-values-section .text-container-3 {
+    width: 675px;
+  }
+
+  .buy-values-section .line {
+    width: 150px;
+  }
+
+  .buy-roadmap-section .card {
+    width: 280px;
+    height: 320px;
+  }
+
+  .sell-roadmap-section .card {
+    height: 500px;
+    width: 300px;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .buy-hero-section .main-text-container {
+    width: 300px;
+  }
+
+  .buy-hero-section .img-container {
+    width: 260px;
+    height: 260px;
+  }
+
+  .buy-hero-section .btns-container {
+    flex-direction: column;
+  }
+
+  .buy-values-section .text-container {
+    width: 300px;
+  }
+
+  .buy-values-section .line.line-2 {
+    bottom: -30px;
+    top: auto;
+    right: auto;
+    left: 50%;
+    translate: -50%;
+  }
+
+  .buy-values-section .line.line-1 {
+    left: 50%;
+    translate: -50%;
+  }
+
+  .buy-values-section .btns-container {
+    flex-direction: column;
+  }
+
+  .buy-roadmap-section .section-container,
+  .buy-roadmap-section .cards-container {
+    gap: 50px;
+  }
+
+  .buy-roadmap-section .heading,
+  .buy-hero-section .heading,
+  .buy-values-section .heading,
+  .white-text,
+  .btns-container,
+  .text-container {
+    align-self: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .buy-values-section .heading-container {
+    margin-right: 70px;
+  }
+
+  .buy-values-section .section-container {
+    gap: 50px;
+  }
+
+  .sell-roadmap-section .card .list-item,
+  .sell-roadmap-section .card .list-heading,
+  .sell-roadmap-section .container-heading {
+    align-items: flex-start;
+    align-self: flex-start;
+    text-align: left;
+  }
+}
+
 /*# sourceMappingURL=buy.css.map */

@@ -448,23 +448,20 @@ footer .left-container .img-container {
 
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Playfair+Display&display=swap");
 
-.locations-section {
+.sitemap-section {
   background: rgb(15, 15, 15);
   background: linear-gradient(90deg, rgb(15, 15, 15) 20%, rgb(83, 83, 83) 73%);
   padding-top: 150px;
+  min-height: 100vh;
 }
 
-.locations-section .section-container {
+.sitemap-section .section-container {
   gap: 50px;
 }
 
-.locations-section .main-text-container {
+.sitemap-section .main-text-container {
   gap: 30px;
   width: 650px;
-}
-
-.locations-section .text-container {
-  gap: 20px;
 }
 
 /*# sourceMappingURL=contact.css.map */
