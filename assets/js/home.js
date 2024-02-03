@@ -108,7 +108,7 @@ document.addEventListener("DOMContentLoaded", () => {
         } else {
             moveCards(1);
         }
-    }, 4000);
+    }, 12000);
 });
 
 const observer = new IntersectionObserver((entries) => {

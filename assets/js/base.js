@@ -5,3 +5,5 @@ navBtn.addEventListener("click", () => {
     navMenu.classList.toggle("active");
     navBtn.classList.toggle("active");
 });
+
+document.getElementById("currentYear").innerHTML = new Date().getFullYear();

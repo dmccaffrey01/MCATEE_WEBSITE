@@ -258,7 +258,7 @@ h2.logo-text {
 
 footer {
   width: 100%;
-  padding: 30px 0;
+  padding: 40px 0;
   background: rgb(83, 83, 83);
   background: linear-gradient(270deg, rgb(83, 83, 83) 20%, rgb(15, 15, 15) 73%);
   border-top: 2px solid #af8c53;
@@ -309,10 +309,32 @@ footer .left-container .img-container {
   height: 100px;
 }
 
+footer .left-container .img-container.logo-2 {
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+footer .left-container {
+  gap: 20px;
+}
+
+footer .footer-contact-info-container {
+  gap: 20px;
+}
+
+footer .footer-contact-info-container .social-container {
+  gap: 20px;
+}
+
+footer .footer-contact-info-container .social-container i {
+  font-size: 3rem;
+}
+
+footer .center-container .container-col {
+  gap: 20px;
+}
+
 @media (max-width: 1500px) {
-  footer .footer-container {
-    flex-direction: column;
-  }
 
   footer .left-container {
     order: 3;
@@ -342,6 +364,11 @@ footer .left-container .img-container {
 @media (max-width: 1500px) {
   .section-container {
     width: 1000px;
+  }
+
+  footer .footer-container {
+    flex-direction: column;
+    gap: 30px;
   }
 
   .section {
