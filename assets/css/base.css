@@ -258,10 +258,10 @@ h2.logo-text {
 
 footer {
   width: 100%;
-  padding: 40px 0;
+  padding: 20px 0;
   background: rgb(83, 83, 83);
   background: linear-gradient(270deg, rgb(83, 83, 83) 20%, rgb(15, 15, 15) 73%);
-  border-top: 2px solid #af8c53;
+  border-top: 4px solid #af8c53;
 }
 
 footer .footer-container {
@@ -276,7 +276,7 @@ footer .right-container {
 }
 
 footer .footer-nav-container {
-  gap: 30px;
+  gap: 10px;
 }
 
 footer .footer-nav-container .container-col {
@@ -327,7 +327,7 @@ footer .footer-contact-info-container .social-container {
 }
 
 footer .footer-contact-info-container .social-container i {
-  font-size: 3rem;
+  font-size: 1rem;
 }
 
 footer .center-container .container-col {
