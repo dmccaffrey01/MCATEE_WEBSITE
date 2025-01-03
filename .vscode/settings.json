@@ -22,8 +22,8 @@
    },
    "editor.fontSize": 16,
    "editor.codeActionsOnSave": {
-      "source.fixAll": true,
-      "source.sortImports": true,
+      "source.fixAll": "explicit",
+      "source.sortImports": "explicit"
    },
    "[css]": {
       "editor.sugggest.insertMode": "replace",
